@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    color: darkcyan;
+}
+
+img {
+    height: 75%;
+    width: 75%;
+}
+
+#titleHeader {
+    background-color: rgb(73, 60, 60);
+}
+
+table {
+    justify-content: center;
+}
