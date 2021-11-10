@@ -3,7 +3,16 @@ body{
     
     
 }
-div{
+section{
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+article{
+    font-size: medium;
+}
+.centerImage{
     display: flex;
     justify-content: center;
 }
