@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(0, 51, 20);
+    color: white;
+    margin: 50px;
+}
+h1 {
+    color: rgb(132, 170, 241);
+}
+h3{
+    color: rgb(163, 195, 255);
+}
+table {
+    border-collapse: collapse;
+}
+th {
+    background-color:green;
+}
+th, td {
+    width: 150px;
+    text-align: center;
+    border:1px solid black;
+    padding: 5px;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
