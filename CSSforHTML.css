@@ -1,0 +1,41 @@
+body{
+    background-color:grey;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#head{
+    align-self: center;
+    font-weight:bolder;
+    background-color: green;
+    text-align:center;
+    padding: 2px;
+    border: solid 3px black;
+    font-size:larger;
+    width:30%;
+    
+}
+article{
+    background-color: red;
+    border: solid 3px black;
+    width:30%;
+    text-align:center;
+    margin:auto;
+}
+footer{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+nav{
+    background-color:yellow;
+    width:30%;
+    border: solid 3px black;
+    text-align:center;
+    margin:auto;
+}
+.content{
+    
+}
