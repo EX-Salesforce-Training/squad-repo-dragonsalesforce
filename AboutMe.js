@@ -21,7 +21,7 @@ function calculate(){
     }
     function exponential(x, y){
         console.log("This feature is experiencing technical issues");
-        if(y = 0){
+        if(y == 0){
             return 1;
         }
         else if(y < 0){
