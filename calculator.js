@@ -1,8 +1,8 @@
 window.onload = function() {
-    document.querySelector("addButton").addEventListener("click", doAdd)
-    document.querySelector("subButton").addEventListener("click", doSubtract)
-    document.querySelector("multButton").addEventListener("click", doMultiply)
-    document.querySelector("divButton").addEventListener("click", doDivide)
+    document.querySelector("#addButton").addEventListener('click', doAdd);
+    document.querySelector("#subButton").addEventListener('click', doSubtract);
+    document.querySelector("#multButton").addEventListener('click', doMultiply);
+    document.querySelector("#divButton").addEventListener('click', doDivide);
 }
 
 function doAdd() {
