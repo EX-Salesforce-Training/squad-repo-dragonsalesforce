@@ -1,0 +1,121 @@
+template{
+    background-color: black;
+}
+ .body,html{
+     height:100%;
+     margin: 0%;
+ }
+ 
+ 
+.desciption{
+    color: white;
+    text-align: center;
+}
+.bg{
+   
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 120%;
+    background-repeat: no-repeat;
+ }
+
+.scoreboard{
+    display: grid;
+    grid-template-columns: repeat(6, 5fr) ;
+    width: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+}
+.scoreboard__score {
+    padding: 10px;
+    text-align: center;
+}
+
+.scoreboard__name{
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+ .scoreboard__name--one{
+     color: #BD201B;
+     border-bottom: 1px solid #ddd;
+     border-top: 1px solid #ddd;
+
+ }
+ .scoreboard__name--two{
+     color:#3C4896;
+     border-bottom: 1px solid #ddd;
+     border-top: 1px solid #ddd;
+     border-left:  1px solid #ddd;
+ }
+ .scoreboard__name--three{
+     color:black;
+     border-bottom: 1px solid #ddd;
+     border-top: 1px solid #ddd;
+    border-left:  1px solid #ddd;
+ }
+ .scoreboard__name--four{
+     color:#109972;
+     border-bottom: 1px solid #ddd;
+     border-top: 1px solid #ddd;
+     border-left:  1px solid #ddd;
+ }
+ .scoreboard__name--five{
+     color:royalblue;
+     border-bottom: 1px solid #ddd;
+     border-top: 1px solid #ddd;
+     border-left:  1px solid #ddd;
+ }
+ .scoreboard__score{
+     font-size: 2em;
+ }
+
+ .scoreboard__controls{
+     display:flex;
+    
+ }
+
+ .scoreboard__control-button{
+    flex-grow: 1;
+    border: none;
+    font-size: 1.2em;
+ }
+
+  .scoreboard__control-button:hover{
+      background: #ddd;
+  }
+
+   .scoreboard__control-button:active{
+      background: #ccc;
+  }
+  .scoreboard__control-button:hover{
+      background: #ddd;
+  }
+
+   .scoreboard__control-button:active{
+      background: #ccc;
+  }
+ 
+
+
+h1 {
+    color: red;
+    text-align: center;
+    
+}
+
+
+
+
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+}
+.app {
+    background-color: black;
+    height: 100vh;
+    overflow: scroll;
+}
