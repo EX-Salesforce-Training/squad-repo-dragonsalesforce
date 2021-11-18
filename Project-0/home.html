@@ -1,0 +1,84 @@
+<template>
+  <div class="menu">
+    <button class="menuButton" type="button" label="Home" onclick={handleHomeClick}>Home</button>
+    <button class="menuButton" type="button" label="Road" onclick={handleRoadClick}>Road</button>
+    <button class="menuButton" type="button" label="MTB" onclick={handleMtbClick}>MTB</button>
+    <button class="menuButton" type="button" label="Apparel" onclick={handleApparelClick}>Apparel</button>
+    <button class="menuButton" type="button" label="Training" onclick={handleTrainingClick}>Training</button>
+    <button class="menuButton" type="button" label="Clearance" onclick={handleClearanceClick}>Clearance</button>
+  </div>
+
+  <div class="slds-size_3-of-4">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+      <lightning-carousel>
+        <lightning-carousel-image
+          src="https://nsmb.com/media/images/21Stumpjumper_0321_RTjpg.2e16d0ba.fill-1920x1200.jpg"
+          header="2021 S-Works Stumpjumper"
+          description="Checkout the latest biking technology with the 2021 S-Works Specialized Stumpjumper"
+          alternative-text="Image of a 2021 Specialized S-Works Stumpjumper with a dark background"
+          href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://nsmb.com/media/images/DSC01242_denizmerdano_timfox36_d.2e16d0ba.fill-1920x1200.jpg"
+          header="Fox 36" description="Check out the amazing technology of the Fox 36 Forks!"
+          alternative-text="Image of Fox 36 Forks" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://nsmb.com/media/images/nsmb_2018_gearreview_kona_satori.2e16d0ba.fill-1920x1200_nzlqlcJ.jpg"
+          header="Konah Wah Wah 2 Pedals" description="Check out the Konah Wah Wah 2 pedals!"
+          alternative-text="Image of Konah Wah Wah 2 pedals on a bike." href="javascript:void(0);">
+        </lightning-carousel-image>
+      </lightning-carousel>
+    </div>
+  </div>
+
+  <div class="slds-grid slds-grid_align-space slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Gloves!">
+        <lightning-button onclick={handleApparelClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/67119-161_GLV_BG-SPORT-GEL-GLOVE-LF-RED-M_HERO?fmt=auto">
+        <p slot="footer">Specialized Men's Body Geometry Sport Gel Long Finger Gloves</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Helmets!">
+        <lightning-button onclick={handleApparelClick} label="Helmets" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/60219-022_HLMT_SW-DISSIDENT-DH-HLMT-ANGI-MIPS-CPSC-RAW-CARBON-M_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Specialized S-Works Dissident</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Clearance!">
+        <lightning-button onclick={handleClearanceClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/61021-004_SHOE_SW-7-RD-SHOE-SPEED-OF-LIGHT-LTD-44_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">S-Works 7 Road SHoes - Speed of Light Collection now 20% off!</p>
+      </lightning-card>
+    </div>
+  </div>
+  <br>
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Road Bikes!">
+        <lightning-button onclick={handleRoadClick} label="Road Bikes" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/BRD-9074__Lower_2880x1620_Tarmac_Bike_1?$hybris-pdp-photo-carousel$">
+        <p slot="footer">S-Works Tarmac SL7 - Speed of Light Collection</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Training Equipment!">
+        <lightning-button onclick={handleTrainingClick} label="Training" slot="actions"></lightning-button>
+        <img src="http://cdn.shopify.com/s/files/1/2484/8112/products/MTBHopper23024_1200x1200.jpg?v=1611219869">
+        <p slot="footer">MTB Hopper Lite Bike Ramp</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="BMX">
+        <lightning-button onclick={handleBmxClick} label="BMX" slot="actions"></lightning-button>
+        <img src="https://ep1.pinkbike.org/p4pb19588461/p4pb19588461.jpg">
+        <p slot="footer">Specialized P.3 Dirt Jumper</p>
+      </lightning-card>
+    </div>
+  </div>
+
+
+</template>
