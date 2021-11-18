@@ -1,0 +1,82 @@
+<template>
+  <div class="body">
+    <header>
+      <img class = "logo" src = https://i.ibb.co/Cz1xPtV/Anvil-logo.png>
+      <img class = "title" src = https://i.ibb.co/4tm2Dmc/Title.png>
+    </header>
+    <div class="menu">
+      <button class = "menuButton" onclick = {handleHomeClick}>HOME</button>
+      <button class = "menuButton" onclick = {handleAboutClick}>ABOUT US</button>
+      <button class = "menuButton" onclick = {handleShopClick}>SHOP</button>
+      <button class = "menuButton" onclick = {handleResourcesClick}>RESOURCES</button>
+      <button class = "menuButton" onclick = {handleContactClick}>CONTACT US</button>
+      <input class = "menuSearch">
+      <button class = "menuButton" onclick = {handleSearchClick}>SEARCH</button>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
+
+    <carousel>
+      <div class="slds-size_2-of-4">
+
+        <lightning-carousel disable-auto-scroll>
+          <lightning-carousel-image src="https://i.ibb.co/kHCm6V3/patterned-axe.png" header="Textured Hatchet"
+            description="Matching textured shaft with black leather wrapping."
+            alternative-text="First card accessible description." href="https://www.salesforce.com">
+          </lightning-carousel-image>
+          <lightning-carousel-image src="https://th.bing.com/th/id/OIP.ibfrpAYU8hwDbQe4Rs9ZGAHaE7?pid=ImgDet&rs=1"
+            header="Damascus Patterned Arming Sword"
+            description="Damascus patterned crossguard and pommel, laquered oak hilt."
+            alternative-text="Second card accessible description." href="https://www.salesforce.com">
+          </lightning-carousel-image>
+          <lightning-carousel-image
+            src="https://scontent.fric2-1.fna.fbcdn.net/v/t1.6435-9/89914052_1316180608575714_3267272052603617280_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=cdbe9c&_nc_ohc=TTlFCSNRd6kAX_KGHmT&_nc_ht=scontent.fric2-1.fna&oh=b683454beb936cff972dd8b795083092&oe=61BD03E1"
+            header="Bowie Knife" description="Riveted rosewood handle and leather sheath."
+            alternative-text="Third card accessible description." href="https://www.salesforce.com">
+          </lightning-carousel-image>
+        </lightning-carousel>
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+    </carousel>
+
+    <div class=grid>
+
+      <h1 class=gridHeader>Featured Projects</h1>
+      <div class=gridRow>
+        <img class = gridImg src = https://i.ibb.co/WKQW2j3/GridAxe1.png>
+        <img class = gridImg src = https://i.ibb.co/KsYTMbR/Grid-Hammer1.png>
+        <img class = gridImg src = https://i.ibb.co/748KNb3/Grid-Sword1.png>
+      </div>
+      <br>
+      <br>
+      <div class=gridRow>
+        <img class = gridImg src = https://i.ibb.co/X8jCGNC/Grid-Knife-Set.png>
+        <img class = gridImg src = https://i.ibb.co/w48ddd9/Grid-Tongs.png>
+        <img class = gridImg src = https://i.ibb.co/5sWnB5x/Grid-Cleavers.png>
+      </div>
+      <br>
+      <br>
+      <div class=gridRow>
+        <img class = gridImg src = https://i.ibb.co/2yvKHjM/Grid-Leaves-Copy.png>
+        <img class = gridImg src = https://i.ibb.co/XF5YKY3/Grid-Horseshoe.png>
+        <img class = gridImg src = https://i.ibb.co/mS5VMfn/Grid-Rings.png>
+      </div>
+    </div>
+    <br>
+    <br>
+    <footer>
+
+      <img class = "logo" src = https://i.ibb.co/Cz1xPtV/Anvil-logo.png>
+
+    </footer>
+
+  </div>
+</template>
