@@ -29,7 +29,8 @@ var runsInfo = ["Dragons need exercise, and the working dragon master may not al
 	        "gives your dragon the freedom it graves, while stopping them from raiding neighboring cities, farmers fields, or school playgrounds.",lb,
 	        "Available in a variety of lengths, distances, weights, and now multiple colors, Our Dragon Runs(TM) make the perfect gift for the ",lb,
 	        "hard to please dragon master - or dragon - in your life. Call Today For ordering information!"];
-var harnessInfo = "";
+var harnessInfo = ["Our line of custom harnesses and saddles is second to none. Each one is exquisitly hand made from the finest of materials, and imbued with",lb,
+		  "All the latest Magics. Stop by today to have your dragon custom fitted!"];
 
 var contactInfo = [ "Come join us at the castle!",lb,
                     "The draw bridge is down during regular business hours.",lb,
