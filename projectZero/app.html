@@ -1,0 +1,67 @@
+<templatE>
+	<!--Header-->
+	<table class="bannerArea">
+		<tr>
+			<td>
+				<center><img src="https://i.imgur.com/aheUobf.png" class=logo></img></center>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<!--main section-->
+	<div class="mainSection">
+		<table>
+			<tr>
+				<td width=100%>
+					<center>
+						<div class="navArea">
+							<lightning-button label="About Us" onclick={aboutHandler}>
+							</lightning-button>
+							&nbsp;&nbsp;
+							<lightning-button label="Leashes" onclick={leashHandler}>
+							</lightning-button>
+							&nbsp;&nbsp;
+							<lightning-button label="Harnesses" onclick={harnessHandler}>
+							</lightning-button>
+							&nbsp;&nbsp;
+							<lightning-button label="Dragon Runs" onclick={runsHandler}>
+							</lightning-button>
+							&nbsp;&nbsp;
+							<lightning-button label="Contact us" onclick={contactHandler}>
+							</lightning-button>
+						</div>
+					</center>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					&nbsp;
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<table class="contentArea">
+						<tr>
+							<td class="centerArea">
+								<template for:each={mainContent} for:item="mCon">
+									{mCon}
+								</template>
+								<!--You've won for now shadow DOM, but i will have my rewenge. -->
+								<div id="centArea"></div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+	<!--Footer.-->
+	<table class="footerArea">
+		<tr>
+			<td>
+				<center>(c) 2021 Dragon Leash Corp. LLC<br>31337 Fiery Death Blvd<br>Pointe Sur-le-Lac, QC, CA</center>
+			</td>
+		</tr>
+	</table>
+</template>
