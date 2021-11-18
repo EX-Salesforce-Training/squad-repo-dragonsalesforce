@@ -1,0 +1,82 @@
+<template>
+  <div class="menu">
+    <button class="menuButton" type="button" label="Home" onclick={handleHomeClick}>Home</button>
+    <button class="menuButton" type="button" label="Road" onclick={handleRoadClick}>Road</button>
+    <button class="menuButton" type="button" label="MTB" onclick={handleMtbClick}>MTB</button>
+    <button class="menuButton" type="button" label="Apparel" onclick={handleApparelClick}>Apparel</button>
+    <button class="menuButton" type="button" label="Training" onclick={handleTrainingClick}>Training</button>
+    <button class="menuButton" type="button" label="Clearance" onclick={handleClearanceClick}>Clearance</button>
+  </div>
+  <div class="slds-size_3-of-4">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+      <lightning-carousel>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/94520-01_DEMO-RACE-BRSH-REDTNTALU-WHT_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="Specialized Demo Race"
+          description="See why this high end downhill bike has been one of the winningest bikes for the DH world cup!"
+          alternative-text="Image of a Demo Race bike" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/91320-01_EPIC-HT-SW-CARBON-SRAM-AXS-29-DOVGRY-RKTRED-CRMSN_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="S-Works Epic Hardtail AXS" description="The best hardtail you can buy! S-Works Epic Hardtail AXS"
+          alternative-text="Image of an S-Works Epic Hardtail AXS" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/98021-01_KENEVO-SL-SW-CARBON-29-CARB-BLK-DRMSIL_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="S-Works Turbo Kenevo SL" description="The lighest, most innovative E-bike on the market"
+          alternative-text="Image of S-Works Turbo Kenevo SL" href="javascript:void(0);">
+        </lightning-carousel-image>
+      </lightning-carousel>
+    </div>
+  </div>
+
+  <div class="slds-grid slds-grid_align-space slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Chainrings">
+        <lightning-button onclick={handleMtbClick} label="MTB" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/06218-1713_CMPNT_SPECIALIZED-CHAINRING-SET_110X50-34T-W-NOTCH_BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Praxis Chainrings</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Helmets!">
+        <lightning-button onclick={handleApparelClick} label="Helmets" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/60219-034_HLMT_AMBUSH-HLMT-ANGI-MIPS-CPSC-BLK-M_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Specialized Ambush Helmet!</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Gloves!">
+        <lightning-button onclick={handleClearanceClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/67216-110_GLV_DEFLECT-H2O_BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Deflect H2O Gloves</p>
+      </lightning-card>
+    </div>
+  </div>
+  <br>
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Frames!">
+        <lightning-button onclick={handleRoadClick} label="Frames" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/76322-70_SJ-EVO-ALLOY-FRM-ALU-GUN_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Stumpjumper EVO Alloy Frameset</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Trail Bikes!">
+        <lightning-button onclick={handleTrainingClick} label="Demo Expert" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/94522-30_DEMO-EXPERT-SILDST-CHAR_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Demo Expert</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="MTB">
+        <lightning-button onclick={handleBmxClick} label="MTB" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/96821-00_LEVO-SL-SW-CARBON-CARB-BNZFL-CARB_FDSQ?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">S-Works Turbo Levo SL</p>
+      </lightning-card>
+    </div>
+  </div>
+
+
+</template>
