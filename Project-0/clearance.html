@@ -1,0 +1,83 @@
+<template>
+  <div class="menu">
+    <button class="menuButton" type="button" label="Home" onclick={handleHomeClick}>Home</button>
+    <button class="menuButton" type="button" label="Road" onclick={handleRoadClick}>Road</button>
+    <button class="menuButton" type="button" label="MTB" onclick={handleMtbClick}>MTB</button>
+    <button class="menuButton" type="button" label="Apparel" onclick={handleApparelClick}>Apparel</button>
+    <button class="menuButton" type="button" label="Training" onclick={handleTrainingClick}>Training</button>
+    <button class="menuButton" type="button" label="Clearance" onclick={handleClearanceClick}>Clearance</button>
+  </div>
+
+  <div class="slds-size_3-of-4">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+      <lightning-carousel>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/64820-193_APP_NEW-ERA-9FIFTY-SNAPBACK-HAT-S-LOGO-LTGRY-OSFA_HERO_FORM?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="New Era 9Fifty Snapback S-Logo Hat" description="25% off this light grey snapback!"
+          alternative-text="Image of a hat" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/67020-100_GLV_BG-DUAL-GEL-GLOVE-SF-AQA-M_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="Men's Body Geometry Duel-Gel Gloves" description="Aqua fingerless gloves on sale now!"
+          alternative-text="Image of gloves" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/64120-711_APP_THERMINAL-WIND-JERSEY-LS-WMN-HYP-M_HERO2?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="Women's Therminal Wind Long Sleeve Jersey"
+          description="50% off this high quality Therminal wind long sleeve jersey!"
+          alternative-text="Image of a yellow Women's Jersey" href="javascript:void(0);">
+        </lightning-carousel-image>
+      </lightning-carousel>
+    </div>
+  </div>
+
+  <div class="slds-grid slds-grid_align-space slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Shoes!">
+        <lightning-button onclick={handleApparelClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/61119-514_SHOE_SPORT-MTB_RKTRED_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Specialized Sport Mountain Bike Shoes</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Clearance!">
+        <lightning-button onclick={handleApparelClick} label="Helmets" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/146464?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Specialized Airnet 33% off!</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Clearance!">
+        <lightning-button onclick={handleClearanceClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/41118-0401_BAG_SEAT-PACK_BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Seat Pack - X-Large half off!</p>
+      </lightning-card>
+    </div>
+  </div>
+  <br>
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Tires!">
+        <lightning-button onclick={handleRoadClick} label="Clearance" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/00120-001_TIRE_BUTCHER-GRID-TRAIL-2BR-TIRE-29X26_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Butcher BLCK DMND 2Bliss Ready</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Tubes!">
+        <lightning-button onclick={handleTrainingClick} label="Clearance" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/03116-027_TUBE_PV-TURBO-TALC_BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Turbo Presta Valve Tube with Talc</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Wheels!">
+        <lightning-button onclick={handleBmxClick} label="Clearance" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/30021-893_WHL_321-DISC-BRAKE-REAR-CARBON-GLOSS-WHT_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Roval 321 Disc - Disc Break</p>
+      </lightning-card>
+    </div>
+  </div>
+
+
+</template>
