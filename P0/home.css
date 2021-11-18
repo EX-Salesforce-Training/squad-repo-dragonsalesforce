@@ -1,0 +1,201 @@
+lightning-carousel {
+    background: white;
+  }
+  article {
+    font-size: 13pt;
+  }
+  .rlogo{
+    width: 100px;
+    height:auto;
+  }
+  .blogo{
+    width: 100px;
+    height:auto;
+    float: right;
+  }
+  .max{
+    width: 200px;
+    height: auto;
+  }
+  .soto{
+    width: 200px;
+    height: auto;
+  }
+  .baseballs{
+    width: 200px;
+    height: auto;
+  }
+  .kb{
+    width: 200px;
+    height: auto;
+  }
+  .as{
+    width: 200px;
+    height: auto;
+  }
+  .zg{
+    width: 200px;
+    height: auto;
+  }
+  .aj {
+    width: 200px;
+    height: auto;
+  }
+  h1{
+    text-align: center;
+    font-size: 30pt;
+    font-weight: bolder;
+    width: 100%;
+  }
+  lightning-tabset {
+    width: 75%;
+  }
+  ul {list-style-type: none;}
+  body {font-family: Verdana, sans-serif;}
+  
+  .month {
+    padding: 20px 5px;
+    width: 100%;
+    background:navy;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  .days .atl {
+    padding: 5px;
+    background:rgb(19, 39, 79);
+    color: white !important
+  }
+  .days .phi {
+    padding: 5px;
+    background:rgb(232, 24, 40);
+    color: white !important
+  }
+  .days .nym {
+    padding: 5px;
+    background:rgb(252, 89, 16);
+    color: white !important
+  }
+  .days .wsh {
+    padding: 5px;
+    background:rgb(171,0,3);
+    color: white !important
+  }
+  .days .chc {
+    padding: 5px;
+    background:rgb(14, 51, 134);
+    color: white !important
+  }
+  .days .mil {
+    padding: 5px;
+    background:rgb(255, 197, 47);
+    color: white !important
+  }
+  .days .off {
+    padding: 5px;
+    background:black;
+    color: white !important
+  }
+  .stats td {
+    border: 1px solid black;
+    text-align: center;
+  }
+  .stats th{
+    border: 1px solid black;
+    text-align: center;
+  }
+  .stand td {
+    border: 1px solid black;
+    text-align: center;
+  }
+  .stand th{
+    border: 1px solid black;
+    text-align: center;
+  }
+  .stand .standHead{
+    background: black;
+    color: white !important
+  }
+  .stand .atlStand{
+    background:rgb(19, 39, 79);
+    color: white !important
+  }
+  .stand .wshStand{
+    background:rgb(171,0,3);
+    color: white !important
+  }
+  .stand .nymStand{
+    background:rgb(252, 89, 16);
+    color: white !important
+  }
+  .stand .phiStand{
+    background:rgb(232, 24, 40);
+    color: white !important
+  }
+  .stand .rocStand{
+     background: navy;
+    color: white !important
+  }
+  tr .logo{
+    width: 20px;
+    height: auto;
+  }
+  lightning-card .sLogo{
+    width: 20px;
+    height: auto;
+  }
+  .socials {
+    text-align: center;
+    font-size: 12pt;
+  }
+  lightning-carousel-image {
+    width: 200px;
+    height: auto;
+    background: white;
+  }

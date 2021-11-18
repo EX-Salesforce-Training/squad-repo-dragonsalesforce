@@ -1,0 +1,391 @@
+<template>
+    <img src="https://i.pinimg.com/originals/d2/1b/3a/d21b3ac98b7838ee230db8c0d1e31acc.png" class="rlogo">
+    <img src="https://lh3.googleusercontent.com/proxy/uIlhvTZWN8C3IuTkwAOWDXVoaVTZwcuA7XenNT0_KyHZcVzYTTqZZzEUtSPZMAA0yaFvBGnoLPTo27reKRI1TZ4" class="blogo">
+    <div class="everything">
+      <h1 class="slds-text-heading_medium slds-m-bottom_large slds-align_absolute-center">
+        The Rockville Rockets
+      </h1>
+      <div class="slds-m-top_medium slds-m-bottom_x-large slds-align_absolute-center">
+        <lightning-button-group>
+          <lightning-button label="Home" onclick={handleHomeClick}></lightning-button>
+          <lightning-button label="Tickets" onclick={handleTicketsClick}></lightning-button>
+          <lightning-button label="Stadium" onclick={handleStadiumClick}></lightning-button>
+          <lightning-button label="Stats" onclick={handleStatsClick}></lightning-button>
+          <lightning-button label="MLB News" onclick={handleNewsClick}></lightning-button>
+          <lightning-button label="Fantasy Baseball" onclick={handleFantasyClick}></lightning-button>
+        </lightning-button-group>
+      </div>
+      <div class="slds-align_absolute-center slds-m-top_large">
+        <div class="slds-size_1-of-2 slds-m-horizontal_large">
+          <lightning-card title="Stats all around the League">
+            <ul class="slds-has-block-links_space">
+              <li><a href="https://www.baseball-reference.com/">Baseball Reference - The most complete collection of
+                  baseball statistics</a>
+              </li>
+              <li><a href="https://www.mlb.com/stats/">Offical MLB Website - A solid spreadsheet of statistics, great for
+                  casual fans</a></li>
+              <li><a href="https://www.espn.com/mlb/stats">ESPN Stats - ESPN's easily navigatable collection of
+                  statistics,
+                  great for casual fans</a></li>
+              <li><a href="https://www.fangraphs.com/">Fangraphs - A Sabermetrics favortite tool. A very in depth
+                  statistic
+                  website. </a></li>
+            </ul>
+  
+          </lightning-card>
+        </div>
+      </div>
+      <div class="slds-align_absolute-center slds-m-top_large">
+        <div class="slds-size_4-of-7 slds-m-around_small">
+          <lightning-tabset>
+            <lightning-tab label="Starting Lineup">
+              <table class="stats">
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Hits</th>
+                  <th>Doubles</th>
+                  <th>Triples</th>
+                  <th>Homeruns</th>
+                  <th>Batting Average</th>
+                  <th>RBI's</th>
+                  <th>WAR</th>
+                </tr>
+                <tr>
+                  <td>Ender Inciarte</td>
+                  <td>Center Field</td>
+                  <td>194</td>
+                  <td>30</td>
+                  <td>2</td>
+                  <td>10</td>
+                  <td>.296</td>
+                  <td>45</td>
+                  <td>2.9</td>
+                </tr>
+                <tr>
+                  <td>Brian Anderson</td>
+                  <td>Right Field</td>
+                  <td>139</td>
+                  <td>34</td>
+                  <td>1</td>
+                  <td>9</td>
+                  <td>.216</td>
+                  <td>53</td>
+                  <td>-1.2</td>
+                </tr>
+                <tr>
+                  <td>Kris Bryant</td>
+                  <td>Third Base</td>
+                  <td>159</td>
+                  <td>33</td>
+                  <td>5</td>
+                  <td>30</td>
+                  <td>.266</td>
+                  <td>82</td>
+                  <td>5.0</td>
+                </tr>
+                <tr>
+                  <td>Andrew McCutchen</td>
+                  <td>Left Field</td>
+                  <td>145</td>
+                  <td>28</td>
+                  <td>4</td>
+                  <td>29</td>
+                  <td>.250</td>
+                  <td>86</td>
+                  <td>3.1</td>
+                </tr>
+                <tr>
+                  <td>Andrelton Simmons</td>
+                  <td>Shortstop</td>
+                  <td>152</td>
+                  <td>30</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>.252</td>
+                  <td>52</td>
+                  <td>4.3</td>
+                </tr>
+                <tr>
+                  <td>Jazz Chisholm</td>
+                  <td>Second Base</td>
+                  <td>111</td>
+                  <td>23</td>
+                  <td>5</td>
+                  <td>18</td>
+                  <td>.194</td>
+                  <td>47</td>
+                  <td>0.6</td>
+                </tr>
+                <tr>
+                  <td>Yuli Gurriel</td>
+                  <td>First Base</td>
+                  <td>148</td>
+                  <td>29</td>
+                  <td>0</td>
+                  <td>11</td>
+                  <td>.255</td>
+                  <td>60</td>
+                  <td>-1.1</td>
+                </tr>
+                <tr>
+                  <td>Buster Posey</td>
+                  <td>Catcher</td>
+                  <td>99</td>
+                  <td>23</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>.268</td>
+                  <td>23</td>
+                  <td>1.4</td>
+                </tr>
+              </table>
+            </lightning-tab>
+            <lightning-tab label="Starting Pitchers">
+              <table class="stats">
+                <tr>
+                  <th>Name</th>
+                  <th>Place in Rotation</th>
+                  <th>Wins</th>
+                  <th>Losses</th>
+                  <th>ERA</th>
+                  <th>Innings Pitched</th>
+                  <th>Strikeouts</th>
+                  <th>Walks</th>
+                  <th>WAR</th>
+                </tr>
+                <tr>
+                  <td>Max Scherzer</td>
+                  <td>Ace</td>
+                  <td>16</td>
+                  <td>7</td>
+                  <td>3.38</td>
+                  <td>226.0</td>
+                  <td>236</td>
+                  <td>33</td>
+                  <td>6.3</td>
+                </tr>
+                <tr>
+                  <td>Pablo Lopez</td>
+                  <td>2nd</td>
+                  <td>9</td>
+                  <td>12</td>
+                  <td>3.09</td>
+                  <td>224.0</td>
+                  <td>180</td>
+                  <td>47</td>
+                  <td>4.5</td>
+                </tr>
+                <tr>
+                  <td>Jesus Luzardo</td>
+                  <td>3rd</td>
+                  <td>15</td>
+                  <td>9</td>
+                  <td>3.70</td>
+                  <td>214.1</td>
+                  <td>245</td>
+                  <td>53</td>
+                  <td>4.2</td>
+                </tr>
+                <tr>
+                  <td>Braxton Garrett</td>
+                  <td>4th</td>
+                  <td>6</td>
+                  <td>16</td>
+                  <td>4.87</td>
+                  <td>188,1</td>
+                  <td>171</td>
+                  <td>88</td>
+                  <td>2.6</td>
+                </tr>
+                <tr>
+                  <td>Sixto Sanchez</td>
+                  <td>5th</td>
+                  <td>10</td>
+                  <td>14</td>
+                  <td>3.28</td>
+                  <td>208.2</td>
+                  <td>195</td>
+                  <td>58</td>
+                  <td>4.9</td>
+                </tr>
+              </table>
+            </lightning-tab>
+            <lightning-tab label="The Bench Bats">
+              <table class="stats">
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Hits</th>
+                  <th>Doubles</th>
+                  <th>Triples</th>
+                  <th>Homeruns</th>
+                  <th>Batting Average</th>
+                  <th>RBI's</th>
+                  <th>WAR</th>
+                </tr>
+                <tr>
+                  <td>Jorge Alfaro</td>
+                  <td>Catcher</td>
+                  <td>43</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>6</td>
+                  <td>.228</td>
+                  <td>23</td>
+                  <td>0.4</td>
+                </tr>
+                <tr>
+                  <td>Garrett Cooper</td>
+                  <td>First Base</td>
+                  <td>20</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>.225</td>
+                  <td>7</td>
+                  <td>-0.3</td>
+                </tr>
+                <tr>
+                  <td>Isan Diaz</td>
+                  <td>Second Base</td>
+                  <td>25</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>.217</td>
+                  <td>15</td>
+                  <td>0.1</td>
+                </tr>
+                <tr>
+                  <td>JT Riddle</td>
+                  <td>Shortstop</td>
+                  <td>9</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>.243</td>
+                  <td>5</td>
+                  <td>0.2</td>
+                </tr>
+                <tr>
+                  <td>Lewis Brinson</td>
+                  <td>Center Field</td>
+                  <td>7</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>.111</td>
+                  <td>6</td>
+                  <td>-0.6</td>
+                </tr>
+                <tr>
+                  <td>Stephen Piscotty</td>
+                  <td>Corner Outfield</td>
+                  <td>8</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>.182</td>
+                  <td>2</td>
+                  <td>-0.4</td>
+                </tr>
+              </table>
+            </lightning-tab>
+            <lightning-tab label="The Bullpen">
+              <table class="stats">
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Wins</th>
+                  <th>Losses</th>
+                  <th>ERA</th>
+                  <th>Innings Pitched</th>
+                  <th>Strikeouts</th>
+                  <th>Walks</th>
+                  <th>WAR</th>
+                </tr>
+                <tr>
+                  <td>Matt Barnes</td>
+                  <td>Closer</td>
+                  <td>1</td>
+                  <td>6</td>
+                  <td>2.83</td>
+                  <td>37.1</td>
+                  <td>82</td>
+                  <td>33</td>
+                  <td>1.6</td>
+                </tr>
+                <tr>
+                  <td>Roberto Osuna</td>
+                  <td>Setup</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>2.77</td>
+                  <td>49.1</td>
+                  <td>61</td>
+                  <td>18</td>
+                  <td>1.0</td>
+                </tr>
+                <tr>
+                  <td>Gerson Bautista</td>
+                  <td>Reliever</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>6.38</td>
+                  <td>47.0</td>
+                  <td>74</td>
+                  <td>63</td>
+                  <td>-0.7</td>
+                </tr>
+                <tr>
+                  <td>Joe Barlow</td>
+                  <td>Reliever</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>2.52</td>
+                  <td>46.1</td>
+                  <td>77</td>
+                  <td>49</td>
+                  <td>0.9</td>
+                </tr>
+                <tr>
+                  <td>Trevor Rodgers</td>
+                  <td>Reliever</td>
+                  <td>1</td>
+                  <td>5</td>
+                  <td>4.45</td>
+                  <td>60.0</td>
+                  <td>109</td>
+                  <td>45</td>
+                  <td>1.0</td>
+                </tr>
+                <tr>
+                  <td>Caleb Smith</td>
+                  <td>Reliever</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>4.39</td>
+                  <td>61.1</td>
+                  <td>110</td>
+                  <td>51</td>
+                  <td>-0.4</td>
+                </tr>
+                <tr>
+                  <td>Edward Cabrera</td>
+                  <td>Long Reliever</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>4.24</td>
+                  <td>66.1</td>
+                  <td>125</td>
+                  <td>42</td>
+                  <td>1.0</td>
+                </tr>
+              </table>
+            </lightning-tab>
+          </lightning-tabset>
+        </div>
+      </div>
+    </div>
+  </template>

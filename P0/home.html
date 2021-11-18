@@ -1,0 +1,706 @@
+<template>
+    <img src="https://i.pinimg.com/originals/d2/1b/3a/d21b3ac98b7838ee230db8c0d1e31acc.png" class="rlogo">
+    <img src="https://lh3.googleusercontent.com/proxy/uIlhvTZWN8C3IuTkwAOWDXVoaVTZwcuA7XenNT0_KyHZcVzYTTqZZzEUtSPZMAA0yaFvBGnoLPTo27reKRI1TZ4" class="blogo">
+    <div class="everything sizing slds-grid slds-wrap">
+      <h1 class="slds-text-heading_medium slds-m-bottom_large slds-align_absolute-center">
+        The Rockville Rockets
+      </h1>
+      <div class="slds-m-top_medium slds-m-bottom_x-large slds-align_absolute-center">
+        <lightning-button-group>
+          <lightning-button label="Home" onclick={handleHomeClick}></lightning-button>
+          <lightning-button label="Tickets" onclick={handleTicketsClick}></lightning-button>
+          <lightning-button label="Stadium" onclick={handleStadiumClick}></lightning-button>
+          <lightning-button label="Stats" onclick={handleStatsClick}></lightning-button>
+          <lightning-button label="MLB News" onclick={handleNewsClick}></lightning-button>
+          <lightning-button label="Fantasy Baseball" onclick={handleFantasyClick}></lightning-button>
+        </lightning-button-group>
+      </div>
+      <div class="slds-align_absolute-center">
+        <lightning-tabset>
+          <lightning-tab label="Max Scherzer Wins Cy Young">
+            <img src="https://cdn.vox-cdn.com/thumbor/7wo-aaa3I1_iVo_-a3qBZD1OpGs=/0x18:480x481/1400x1400/filters:focal(231x59:307x135):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/52860973/Screen_Shot_2017_01_21_at_10.10.49_PM.0.png"
+          class="max slds-align_absolute-center">
+            <article> The ageless wonder, Max Scherzer, has won the National League Cy Young, the fourth of his career.
+              The
+              37 year
+              old,
+              dropped
+              236 strikeouts, a 3.38 era, 16 wins, and a 6.3 WAR. Max Scherzer has been elite for years now, this is his
+              9th
+              top 5 Cy Young
+              finish in his career. People are wondering how long until he falls off, the Rockets are hoping that
+              father
+              time lays off for a while.
+              The 37 year old still has another 4 years on contract. We asked his agent Scott Boras what he thinks about
+              his
+              clients
+              performance,
+              but he was too busy bathing in money.
+            </article>
+          </lightning-tab>
+          <lightning-tab label="Juan Soto Wins MVP">
+            <img src="https://www.nbcsports.com/sites/rsnunited/files/styles/metatags_opengraph/public/article/hero/Soto_J_USATSI_14967023.png"
+          class="soto max slds-align_absolute-center">
+            <article>
+              Young Slugger Juan Soto wins the National League's most valuable player award. Soto slashed 40 homeruns, a
+              batting
+              average of .340, and an obp of .465.
+              The 23 year old finally gets his award, after finishing top 10 for an award every year of his career. His
+              2018,
+              and 2021 2nd place finishes upset many nationals fans, but no one
+              will complain about this finish. The 23 year old Dominican superstar is expected to resign with the world
+              champian
+              Washington Nationals this offseason.
+              We tried to ask his agent Scott Boras for comment, but he was busy partying on Jeff Bezos yacht.
+            </article>
+          </lightning-tab>
+          <lightning-tab label="Nationals Win World Series">
+            <img src="https://dcist.com/wp-content/uploads/sites/3/2020/01/AP_19306794909939-1500x1000.jpg"
+            class="washWs max slds-align_absolute-center">
+            <article>
+              The 2022 Washington Nationals have won the World Series. Just like 2019, they started as a wild card, with
+              almost
+              no one
+              believing they could compete with the big boys. They were able to fight all the way to another pennet, and
+              eventually beating the
+              Chicago White Sox in the World Series. Playoff, and World Series MVP Carter Kieboom slashed a .380 average,
+              and
+              4
+              total homeruns in the
+              playoffs. We asked asked 78 year old White Sox manager Tony LaRussa about the loss, but he was too busy
+              complaining about no one
+              following the unwritten rules anymore.
+            </article>
+          </lightning-tab>
+          <lightning-tab label="Rockville Rockets First Year Breakdown">
+            <img src="https://cdn.vox-cdn.com/thumbor/1yhdgzkgESiP_cEDbHz8XifD1q4=/0x942:3072x2040/1200x800/filters:focal(1551x1172:2041x1662)/cdn.vox-cdn.com/uploads/chorus_image/image/66935491/384281.jpg.0.jpg"
+          class="baseballs slds-align_absolute-center">
+            <article>
+              The Rockville Rockets had high hopes coming into the 2022 season. Their owner wanted results fast, spending
+              more
+              on Free Agency than
+              anyone else. The team put up a disapointing 76 and 86 record. They had great players
+              putting
+              up
+              4
+              plus war seasons, however,
+              a few players really brought the team down. Yuli Gurriel and Brian Anderson had very disapointing seasons,
+              both
+              playing much worse
+              than replacement. One piece of defense that the team could use is that they were the most unlucky team in
+              baseball. They had a
+              negetive 7 pythagorean win differential, which means they won 7 less games than they were mathmatically
+              supposed
+              to. If they win those games,
+              they could've stolen the wild card spot from the Mets. The future of the team is questionable, with most of
+              their
+              talent getting old, and
+              their best hitter, Kris Bryant, demanding a trade.
+            </article>
+          </lightning-tab>
+          <lightning-tab label="Kris Bryant Demands Trade">
+            <img src="https://www.mercurynews.com/wp-content/uploads/2021/08/BNG-L-GIANTS-0802-1.jpg?w=863"
+          class="kb slds-align_absolute-center">
+            <article>
+              Rockville Rockets third baseman Kris Bryant has demanded a trade. He was very disapointed in their 2022
+              season,
+              and does not like
+              the direction that the team is heading. The 31 year old wants to play for a contender, and with his contract
+              not
+              expiring until 2026,
+              he does not want to wait until free agency. We asked Scott Boras for a comment, and he said "I do not care
+              about
+              this
+              client anymore,
+              hit me up when he is a free agent again".
+            </article>
+          </lightning-tab>
+          <lightning-tab label="Andrelton Simmons on his Bounce Back Year">
+            <img src="https://images2.minutemediacdn.com/image/fetch/w_850,h_560,c_fill,g_auto,f_auto/https%3A%2F%2Ftomahawktake.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2016%2F04%2F488373830-850x560.jpeg"
+          class="as slds-align_absolute-center">
+            <article>
+              Before the 2022 season, no one was expecting Andrelton Simmons to get more than a minor league contract.
+              However,
+              the upstart Rockville Rockets decided to
+              shock the world and offered the 32 year old defensive legend a three year contract. This contract was
+              heavily
+              criticized at the time, but no one is questioning them now.
+              The Curacao native put up a 4.3 war season, the second best of all shortstops in 2022, just behind Trea
+              Turner.
+              What
+              changed this year?, his bat. His defensive ability was
+              not the question, the 4 time gold glover is the favorite to win this years, aswell. He was able to make good
+              contact again, becoming a well above replacement hitter,
+              slashinga .252 average. We asked Andrelton Simmons about his comeback season, and he said "Thanks".
+            </article>
+          </lightning-tab>
+          <lightning-tab label="Freak Injury Takes Out Judge for a Year">
+            <img src="https://cdn.vox-cdn.com/thumbor/-5UqRgcaJjz_np06moGsAk0W_J4=/0x0:1912x1274/920x613/filters:focal(927x373:1231x677):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/69234985/1315509435.0.jpg"
+          class="aj slds-align_absolute-center">
+            <article>
+              Aaron Judge cannot catch a break. The injury riddled Bronx bomber finally had a healthy season in 2021, but
+              he
+              will not
+              see the field in 2022. Judge tore his pcl, mcl, acl, labrum, pectoral, bicep, and tricep, in a freak lawn
+              mowing
+              accident.
+              The video of the injury from his property in Middlesex New Jersey has been making the rounds on social
+              media,
+              however, we will
+              warn that it is very disturbing. Yankees fan 27RingsWeAreTheBest left this comment on youtube, "I did not
+              know
+              a
+              human leg could,
+              bend like that, may God have mercy on his soul". Aaron Judge is expecting to be on recovery for the next
+              10 to 12 months.
+            </article>
+          </lightning-tab>
+          <lightning-tab label="ZacK Grienke Retires">
+            <img src="https://s.hdnux.com/photos/01/21/12/40/21276688/3/1200x0.jpg"
+          class="zg slds-align_absolute-center">
+            <article>
+              The Rockville Rockets were very busy this off season, picking up two veteran pitchers to lead their young
+              squad.
+              Zach Grienke,
+              one of those veterans, shockingly retired last night. The future hall of famer, after long conversations
+              with
+              family,
+              decided that it was best to hang up his cleats. He was mainly thinking about his health, if he had another
+              major
+              arm injury, it could
+              affect him the rest of his life. ZacK Grienke had this to say, "After long deliberation with my wife and the
+              rest
+              of my family, I have
+              come to the conclusion that I will retire at once. I was very much looking forward to the upcoming season
+              with
+              the Rockville Rockets,
+              however I am looking at my future. 38 may be an old man in baseball, but I still have much of my life left.
+              If
+              I
+              get one more major arm
+              injury, I may be incapacitated the rest of my life. I want to live a long healthy life with my wife and
+              kids,
+              and
+              that is my number one
+              goal, not playing baseball. I wish the Rockville Rockets and their new owner the best". The Rockville
+              Rockets
+              plan
+              to use Braxton Garrett
+              to fill the hole left by Grienke.
+            </article>
+          </lightning-tab>
+        </lightning-tabset>
+      </div>
+      <div class="test slds-align_absolute-center">
+        <div class="slds-size_7-of-7 slds-m-around_small">
+          <lightning-tabset>
+            <lightning-tab label="Starting Lineup">
+              <table class="stats">
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Hits</th>
+                  <th>Doubles</th>
+                  <th>Triples</th>
+                  <th>Homeruns</th>
+                  <th>Batting Average</th>
+                  <th>RBI's</th>
+                  <th>WAR</th>
+                </tr>
+                <tr>
+                  <td>Ender Inciarte</td>
+                  <td>Center Field</td>
+                  <td>194</td>
+                  <td>30</td>
+                  <td>2</td>
+                  <td>10</td>
+                  <td>.296</td>
+                  <td>45</td>
+                  <td>2.9</td>
+                </tr>
+                <tr>
+                  <td>Brian Anderson</td>
+                  <td>Right Field</td>
+                  <td>139</td>
+                  <td>34</td>
+                  <td>1</td>
+                  <td>9</td>
+                  <td>.216</td>
+                  <td>53</td>
+                  <td>-1.2</td>
+                </tr>
+                <tr>
+                  <td>Kris Bryant</td>
+                  <td>Third Base</td>
+                  <td>159</td>
+                  <td>33</td>
+                  <td>5</td>
+                  <td>30</td>
+                  <td>.266</td>
+                  <td>82</td>
+                  <td>5.0</td>
+                </tr>
+                <tr>
+                  <td>Andrew McCutchen</td>
+                  <td>Left Field</td>
+                  <td>145</td>
+                  <td>28</td>
+                  <td>4</td>
+                  <td>29</td>
+                  <td>.250</td>
+                  <td>86</td>
+                  <td>3.1</td>
+                </tr>
+                <tr>
+                  <td>Andrelton Simmons</td>
+                  <td>Shortstop</td>
+                  <td>152</td>
+                  <td>30</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>.252</td>
+                  <td>52</td>
+                  <td>4.3</td>
+                </tr>
+                <tr>
+                  <td>Jazz Chisholm</td>
+                  <td>Second Base</td>
+                  <td>111</td>
+                  <td>23</td>
+                  <td>5</td>
+                  <td>18</td>
+                  <td>.194</td>
+                  <td>47</td>
+                  <td>0.6</td>
+                </tr>
+                <tr>
+                  <td>Yuli Gurriel</td>
+                  <td>First Base</td>
+                  <td>148</td>
+                  <td>29</td>
+                  <td>0</td>
+                  <td>11</td>
+                  <td>.255</td>
+                  <td>60</td>
+                  <td>-1.1</td>
+                </tr>
+                <tr>
+                  <td>Buster Posey</td>
+                  <td>Catcher</td>
+                  <td>99</td>
+                  <td>23</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>.268</td>
+                  <td>23</td>
+                  <td>1.4</td>
+                </tr>
+              </table>
+            </lightning-tab>
+            <lightning-tab label="Starting Pitchers">
+              <table class="stats">
+                <tr>
+                  <th>Name</th>
+                  <th>Place in Rotation</th>
+                  <th>Wins</th>
+                  <th>Losses</th>
+                  <th>ERA</th>
+                  <th>Innings Pitched</th>
+                  <th>Strikeouts</th>
+                  <th>Walks</th>
+                  <th>WAR</th>
+                </tr>
+                <tr>
+                  <td>Max Scherzer</td>
+                  <td>Ace</td>
+                  <td>16</td>
+                  <td>7</td>
+                  <td>3.38</td>
+                  <td>226.0</td>
+                  <td>236</td>
+                  <td>33</td>
+                  <td>6.3</td>
+                </tr>
+                <tr>
+                  <td>Pablo Lopez</td>
+                  <td>2nd</td>
+                  <td>9</td>
+                  <td>12</td>
+                  <td>3.09</td>
+                  <td>224.0</td>
+                  <td>180</td>
+                  <td>47</td>
+                  <td>4.5</td>
+                </tr>
+                <tr>
+                  <td>Jesus Luzardo</td>
+                  <td>3rd</td>
+                  <td>15</td>
+                  <td>9</td>
+                  <td>3.70</td>
+                  <td>214.1</td>
+                  <td>245</td>
+                  <td>53</td>
+                  <td>4.2</td>
+                </tr>
+                <tr>
+                  <td>Braxton Garrett</td>
+                  <td>4th</td>
+                  <td>6</td>
+                  <td>16</td>
+                  <td>4.87</td>
+                  <td>188,1</td>
+                  <td>171</td>
+                  <td>88</td>
+                  <td>2.6</td>
+                </tr>
+                <tr>
+                  <td>Sixto Sanchez</td>
+                  <td>5th</td>
+                  <td>10</td>
+                  <td>14</td>
+                  <td>3.28</td>
+                  <td>208.2</td>
+                  <td>195</td>
+                  <td>58</td>
+                  <td>4.9</td>
+                </tr>
+              </table>
+            </lightning-tab>
+            <lightning-tab label="The Bench Bats">
+              <table class="stats">
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Hits</th>
+                  <th>Doubles</th>
+                  <th>Triples</th>
+                  <th>Homeruns</th>
+                  <th>Batting Average</th>
+                  <th>RBI's</th>
+                  <th>WAR</th>
+                </tr>
+                <tr>
+                  <td>Jorge Alfaro</td>
+                  <td>Catcher</td>
+                  <td>43</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>6</td>
+                  <td>.228</td>
+                  <td>23</td>
+                  <td>0.4</td>
+                </tr>
+                <tr>
+                  <td>Garrett Cooper</td>
+                  <td>First Base</td>
+                  <td>20</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>.225</td>
+                  <td>7</td>
+                  <td>-0.3</td>
+                </tr>
+                <tr>
+                  <td>Isan Diaz</td>
+                  <td>Second Base</td>
+                  <td>25</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>.217</td>
+                  <td>15</td>
+                  <td>0.1</td>
+                </tr>
+                <tr>
+                  <td>JT Riddle</td>
+                  <td>Shortstop</td>
+                  <td>9</td>
+                  <td>3</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>.243</td>
+                  <td>5</td>
+                  <td>0.2</td>
+                </tr>
+                <tr>
+                  <td>Lewis Brinson</td>
+                  <td>Center Field</td>
+                  <td>7</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>.111</td>
+                  <td>6</td>
+                  <td>-0.6</td>
+                </tr>
+                <tr>
+                  <td>Stephen Piscotty</td>
+                  <td>Corner Outfield</td>
+                  <td>8</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>.182</td>
+                  <td>2</td>
+                  <td>-0.4</td>
+                </tr>
+              </table>
+            </lightning-tab>
+            <lightning-tab label="The Bullpen">
+              <table class="stats">
+                <tr>
+                  <th>Name</th>
+                  <th>Position</th>
+                  <th>Wins</th>
+                  <th>Losses</th>
+                  <th>ERA</th>
+                  <th>Innings Pitched</th>
+                  <th>Strikeouts</th>
+                  <th>Walks</th>
+                  <th>WAR</th>
+                </tr>
+                <tr>
+                  <td>Matt Barnes</td>
+                  <td>Closer</td>
+                  <td>1</td>
+                  <td>6</td>
+                  <td>2.83</td>
+                  <td>37.1</td>
+                  <td>82</td>
+                  <td>33</td>
+                  <td>1.6</td>
+                </tr>
+                <tr>
+                  <td>Roberto Osuna</td>
+                  <td>Setup</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>2.77</td>
+                  <td>49.1</td>
+                  <td>61</td>
+                  <td>18</td>
+                  <td>1.0</td>
+                </tr>
+                <tr>
+                  <td>Gerson Bautista</td>
+                  <td>Reliever</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>6.38</td>
+                  <td>47.0</td>
+                  <td>74</td>
+                  <td>63</td>
+                  <td>-0.7</td>
+                </tr>
+                <tr>
+                  <td>Joe Barlow</td>
+                  <td>Reliever</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>2.52</td>
+                  <td>46.1</td>
+                  <td>77</td>
+                  <td>49</td>
+                  <td>0.9</td>
+                </tr>
+                <tr>
+                  <td>Trevor Rodgers</td>
+                  <td>Reliever</td>
+                  <td>1</td>
+                  <td>5</td>
+                  <td>4.45</td>
+                  <td>60.0</td>
+                  <td>109</td>
+                  <td>45</td>
+                  <td>1.0</td>
+                </tr>
+                <tr>
+                  <td>Caleb Smith</td>
+                  <td>Reliever</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>4.39</td>
+                  <td>61.1</td>
+                  <td>110</td>
+                  <td>51</td>
+                  <td>-0.4</td>
+                </tr>
+                <tr>
+                  <td>Edward Cabrera</td>
+                  <td>Long Reliever</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>4.24</td>
+                  <td>66.1</td>
+                  <td>125</td>
+                  <td>42</td>
+                  <td>1.0</td>
+                </tr>
+              </table>
+            </lightning-tab>
+          </lightning-tabset>
+        </div>
+      </div>
+      <div class=slds-align_absolute-center>
+        <div class="slds-size_2-of-6">
+          <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">Team Leaders
+            <lightning-carousel>
+              <lightning-carousel-image src="https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31327.png"
+                header="Hits" description="Ender Inciarte 194 Hits" alternative-text="First card accessible description."
+                href="javascript:void(0);">
+              </lightning-carousel-image>
+              <lightning-carousel-image src="https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/31327.png"
+                header="Batting Average" description="Ender Inciarte .296 Average"
+                alternative-text="Second card accessible description." href="javascript:void(0);">
+              </lightning-carousel-image>
+              <lightning-carousel-image src="https://cdn-headshots.theathletic.com/mlb/10002076.png" header="Homeruns"
+                description="Kris Bryant 30 Homeruns" alternative-text="Third card accessible description."
+                href="javascript:void(0);">
+              </lightning-carousel-image>
+              <lightning-carousel-image
+                src="https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28976.png&w=350&h=254"
+                header="Wins" description="Max Scherzer 16 Wins" alternative-text="Third card accessible description."
+                href="javascript:void(0);">
+              </lightning-carousel-image>
+              <lightning-carousel-image src="https://cdn-headshots.theathletic.com/mlb/10009997.png"
+                header="Earned Run Average" description="Joe Barlow 2.52 ERA" alternative-text="Joe Barlow 2.52 ERA"
+                href="javascript:void(0);">
+              </lightning-carousel-image>
+              <lightning-carousel-image
+                src="https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/39667.png&w=350&h=254"
+                header="Strikeouts" description="Jesus Luzardo 245 Strikeouts"
+                alternative-text="Third card accessible description." href="javascript:void(0);">
+              </lightning-carousel-image>
+              <lightning-carousel-image
+                src="https://a.espncdn.com/combiner/i?img=/i/headshots/mlb/players/full/28976.png&w=350&h=254"
+                header="Wins Above Replacement" description="Max Scherzer 6.3 WAR."
+                alternative-text="Third card accessible description." href="javascript:void(0);">
+              </lightning-carousel-image>
+            </lightning-carousel>
+          </div>
+        </div>
+      </div>
+      <div class="slds-size_7-of-7 slds-align_absolute-center slds-m-around_x-small">
+        <lightning-card title="National League East Standings">
+          <table class="stand">
+            <tr class="standHead">
+              <th>Teams</th>
+              <th>Wins</th>
+              <th>Loses</th>
+              <th>Percentage</th>
+              <th>Games Back</th>
+            </tr>
+            <tr class="atlStand">
+              <td> <img src="https://www.mlbstatic.com/team-logos/144.svg" class="logo"> x-Atlanta Braves </td>
+              <td>94</td>
+              <td>68</td>
+              <td>.580</td>
+              <td>-</td>
+            </tr>
+            <tr class="wshStand">
+              <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/Washington_Nationals_logo_%28low_res%29.svg/1200px-Washington_Nationals_logo_%28low_res%29.svg.png" class="logo"> z-Washington Nationals
+              </td>
+              <td>93</td>
+              <td>69</td>
+              <td>.574</td>
+              <td>1</td>
+            </tr>
+            <tr class="nymStand">
+              <td> <img src="https://logos-download.com/wp-content/uploads/2016/04/New_York_Mets_logo_alternate-700x372.png" class="logo"> z-New York Mets
+              </td>
+              <td>88</td>
+              <td>74</td>
+              <td>.543</td>
+              <td>6</td>
+            </tr>
+            <tr class="rocStand">
+              <td> <img src="https://i.pinimg.com/originals/d2/1b/3a/d21b3ac98b7838ee230db8c0d1e31acc.png" class="logo"> Rockville Rockets
+              </td>
+              <td>76</td>
+              <td>86</td>
+              <td>.469</td>
+              <td>18</td>
+            </tr>
+            <tr class="phiStand">
+              <td> <img src="https://cdn.freebiesupply.com/images/large/2x/philadelphia-phillies-logo-transparent.png" class="logo"> Philadelphia Phillies
+              </td>
+              <td>72</td>
+              <td>90</td>
+              <td>.444</td>
+              <td>22</td>
+            </tr>
+          </table>
+        </lightning-card>
+      </div>
+      <div class="slds-align_absolute-center slds-m-top_large">
+        <div class="slds-size_1-of-2 slds-m-horizontal_large">
+          <lightning-card title=" Rockville Rockets Schedule">
+            <div class="month">
+              <ul>
+                <li>September<br><span style="font-size:18px">2022</span></li>
+              </ul>
+            </div>
+            <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+            </ul>
+            <ul class="days">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="off">1<br/>OFF</li>
+              <li class="atl">2<br/>ATL</li>
+              <li class="atl">3<br/>ATL</li>
+              <li class="atl">4<br/>ATL</li>
+              <li class="off">5<br/>OFF</li>
+              <li class="phi">6<br/>PHI</li>
+              <li class="phi">7<br/>PHI</li>
+              <li class="phi">8<br/>PHI</li>
+              <li class="nym">9<br/>NYM</li>
+              <li class="nym">10<br/>NYM</li>
+              <li class="nym">11<br/>NYM</li>
+              <li class="off">12<br/>OFF</li>
+              <li class="phi">13<br/>PHI</li>
+              <li class="phi">14<br/>PHI</li>
+              <li class="phi">15<br/>PHI</li>
+              <li class="wsh">16<br/>WSH</li>
+              <li class="wsh">17<br/>WSH</li>
+              <li class="wsh">18<br/>WSH</li>
+              <li class="chc">19<br/>CHC</li>
+              <li class="chc">20<br/>CHC</li>
+              <li class="chc">21<br/>CHC</li>
+              <li class="off">22<br/>OFF</li>
+              <li class="wsh">23<br/>WSH</li>
+              <li class="wsh">24<br/>WSH</li>
+              <li class="wsh">25<br/>WSH</li>
+              <li class="off">26<br/>OFF</li>
+              <li class="nym">27<br/>NYM</li>
+              <li class="nym">28<br/>NYM</li>
+              <li class="mil">29<br/>MIL</li>
+              <li class="mil">30<br/>MIL</li>
+            </ul>
+          </lightning-card>
+        </div>
+      </div>
+      <br/>
+      <div class="slds-size_3-of-3 slds-m-around_small slds-align_absolute-center slds-m-top_large">
+        <lightning-card class="socials">
+          <a href="https://twitter.com/Marlins?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter3_colored_svg-128.png" class="sLogo"> Twitter
+          </a>
+          <a href="https://www.facebook.com/Marlins/"> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-128.png" class="sLogo"> Facebook
+          </a>
+          <a href="https://www.instagram.com/marlins/?hl=en"> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png" class="sLogo"> Instagram
+          </a>
+          <a href="https://www.youtube.com/channel/UC1Gh_pQ7l41tyBn2HeJ1k-A"> <img src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-128.png" class="sLogo"> Youtube
+          </a>
+        </lightning-card>
+      </div>
+    </div>
+  </template>

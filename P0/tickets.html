@@ -1,0 +1,90 @@
+<template>
+    <img src="https://i.pinimg.com/originals/d2/1b/3a/d21b3ac98b7838ee230db8c0d1e31acc.png" class="rlogo">
+    <img src="https://lh3.googleusercontent.com/proxy/uIlhvTZWN8C3IuTkwAOWDXVoaVTZwcuA7XenNT0_KyHZcVzYTTqZZzEUtSPZMAA0yaFvBGnoLPTo27reKRI1TZ4" class="blogo">
+    <div class="everything">
+      <h1 class="slds-text-heading_medium slds-m-bottom_large slds-align_absolute-center">
+        The Rockville Rockets
+      </h1>
+      <div class="slds-m-top_medium slds-m-bottom_x-large slds-align_absolute-center">
+        <lightning-button-group>
+          <lightning-button label="Home" onclick={handleHomeClick}></lightning-button>
+          <lightning-button label="Tickets" onclick={handleTicketsClick}></lightning-button>
+          <lightning-button label="Stadium" onclick={handleStadiumClick}></lightning-button>
+          <lightning-button label="Stats" onclick={handleStatsClick}></lightning-button>
+          <lightning-button label="MLB News" onclick={handleNewsClick}></lightning-button>
+          <lightning-button label="Fantasy Baseball" onclick={handleFantasyClick}></lightning-button>
+        </lightning-button-group>
+      </div>
+      <div class="slds-align_absolute-center">
+        <div class="slds-size_1-of-2 slds-m-horizontal_large">
+          <lightning-card title="Please Purchase Tickets from any of these Online Sellers">
+            <p class="slds-p-horizontal_small"></p>
+            <ul class="slds-has-block-links_space">
+              <li><a href="https://www.mlb.com/tickets">Offical MLB site</a></li>
+              <li><a href="https://www.stubhub.com/miami-marlins-tickets/performer/4342/">Stubhub</a></li>
+              <li><a href="https://www.vividseats.com/mlb-baseball/miami-marlins-tickets.html">Vividseats</a></li>
+              <li><a href="https://seatgeek.com/miami-marlins-tickets">SeatGeek</a></li>
+              <li><a
+                  href="https://www.ticketmaster.com/miami-marlins-tickets/artist/805944?ac_link=MLB_TEAM_MIA">Ticketmaster</a>
+              </li>
+            </ul>
+          </lightning-card>
+        </div>
+      </div>>
+      <div class="slds-align_absolute-center slds-m-top_large">
+        <div class="slds-size_1-of-2 slds-m-horizontal_large">
+          <lightning-card title=" Rockville Rockets Schedule">
+            <div class="month">
+              <ul>
+                <li>September<br><span style="font-size:18px">2022</span></li>
+              </ul>
+            </div>
+            <ul class="weekdays">
+              <li>Mo</li>
+              <li>Tu</li>
+              <li>We</li>
+              <li>Th</li>
+              <li>Fr</li>
+              <li>Sa</li>
+              <li>Su</li>
+            </ul>
+            <ul class="days">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li class="off">1<br/>OFF</li>
+              <li class="atl">2<br/>ATL</li>
+              <li class="atl">3<br/>ATL</li>
+              <li class="atl">4<br/>ATL</li>
+              <li class="off">5<br/>OFF</li>
+              <li class="phi">6<br/>PHI</li>
+              <li class="phi">7<br/>PHI</li>
+              <li class="phi">8<br/>PHI</li>
+              <li class="nym">9<br/>NYM</li>
+              <li class="nym">10<br/>NYM</li>
+              <li class="nym">11<br/>NYM</li>
+              <li class="off">12<br/>OFF</li>
+              <li class="phi">13<br/>PHI</li>
+              <li class="phi">14<br/>PHI</li>
+              <li class="phi">15<br/>PHI</li>
+              <li class="wsh">16<br/>WSH</li>
+              <li class="wsh">17<br/>WSH</li>
+              <li class="wsh">18<br/>WSH</li>
+              <li class="chc">19<br/>CHC</li>
+              <li class="chc">20<br/>CHC</li>
+              <li class="chc">21<br/>CHC</li>
+              <li class="off">22<br/>OFF</li>
+              <li class="wsh">23<br/>WSH</li>
+              <li class="wsh">24<br/>WSH</li>
+              <li class="wsh">25<br/>WSH</li>
+              <li class="off">26<br/>OFF</li>
+              <li class="nym">27<br/>NYM</li>
+              <li class="nym">28<br/>NYM</li>
+              <li class="mil">29<br/>MIL</li>
+              <li class="mil">30<br/>MIL</li>
+            </ul>
+          </lightning-card>
+        </div>
+      </div>
+    </div>
+  </template>

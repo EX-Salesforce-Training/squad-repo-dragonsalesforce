@@ -1,0 +1,46 @@
+<template>
+    <img src="https://i.pinimg.com/originals/d2/1b/3a/d21b3ac98b7838ee230db8c0d1e31acc.png" class="rlogo">
+    <img src="https://lh3.googleusercontent.com/proxy/uIlhvTZWN8C3IuTkwAOWDXVoaVTZwcuA7XenNT0_KyHZcVzYTTqZZzEUtSPZMAA0yaFvBGnoLPTo27reKRI1TZ4" class="blogo">
+    <div class="everything">
+      <h1 class="slds-text-heading_medium slds-m-bottom_large slds-align_absolute-center">
+        The Rockville Rockets
+      </h1>
+      <div class="slds-m-top_medium slds-m-bottom_x-large slds-align_absolute-center">
+        <lightning-button-group>
+          <lightning-button label="Home" onclick={handleHomeClick}></lightning-button>
+          <lightning-button label="Tickets" onclick={handleTicketsClick}></lightning-button>
+          <lightning-button label="Stadium" onclick={handleStadiumClick}></lightning-button>
+          <lightning-button label="Stats" onclick={handleStatsClick}></lightning-button>
+          <lightning-button label="MLB News" onclick={handleNewsClick}></lightning-button>
+          <lightning-button label="Fantasy Baseball" onclick={handleFantasyClick}></lightning-button>
+        </lightning-button-group>
+      </div>
+      <div class="slds-align_absolute-center slds-m-top_large">
+        <div class="slds-size_1-of-2 slds-m-horizontal_large">
+          <lightning-card title="Local Sports News">
+            <ul class="slds-has-block-links_space">
+              <li><a href="https://patch.com/maryland/rockville/sports">Patch - Sports news all around Rockville</a>
+              </li>
+              <li><a href="https://wtop.com/sports/local-sports/">WTOP - Sports news for the DMV Area</a></li>
+              <li><a href="https://www.localdvm.com/sports/local-sports/">LocalDMV - Sports news for the DMV</a></li>
+            </ul>
+          </lightning-card>
+        </div>
+      </div>
+      <div class="slds-align_absolute-center slds-m-top_large">
+        <div class="slds-size_1-of-2 slds-m-horizontal_large">
+          <lightning-card title="News all around the MLB">
+            <ul class="slds-has-block-links_space">
+              <li><a href="https://www.mlb.com/news">MLB - News on the Official MLB Website</a>
+              </li>
+              <li><a
+                  href="https://www.cbssports.com/mlb/news/mlb-rumors-yankees-braves-dodgers-among-growing-list-of-justin-verlander-suitors/">CBS
+                  Sports - News from CBS Sports</a></li>
+              <li><a href="https://bleacherreport.com/mlb">Bleacher Report - News from Bleacher Report</a></li>
+              <li><a href="https://www.espn.com/mlb/">ESPN - ESPN's take on MLB news</a></li>
+            </ul>
+          </lightning-card>
+        </div>
+      </div>
+    </div>
+  </template>

@@ -1,0 +1,46 @@
+<template>
+    <img src="https://i.pinimg.com/originals/d2/1b/3a/d21b3ac98b7838ee230db8c0d1e31acc.png" class="rlogo">
+    <img src="https://lh3.googleusercontent.com/proxy/uIlhvTZWN8C3IuTkwAOWDXVoaVTZwcuA7XenNT0_KyHZcVzYTTqZZzEUtSPZMAA0yaFvBGnoLPTo27reKRI1TZ4" class="blogo">
+    <div class="everything">
+      <h1 class="slds-text-heading_medium slds-m-bottom_large slds-align_absolute-center">
+        The Rockville Rockets
+      </h1>
+      <div class="slds-m-top_medium slds-m-bottom_x-large slds-align_absolute-center">
+        <lightning-button-group>
+          <lightning-button label="Home" onclick={handleHomeClick}></lightning-button>
+          <lightning-button label="Tickets" onclick={handleTicketsClick}></lightning-button>
+          <lightning-button label="Stadium" onclick={handleStadiumClick}></lightning-button>
+          <lightning-button label="Stats" onclick={handleStatsClick}></lightning-button>
+          <lightning-button label="MLB News" onclick={handleNewsClick}></lightning-button>
+          <lightning-button label="Fantasy Baseball" onclick={handleFantasyClick}></lightning-button>
+        </lightning-button-group>
+      </div>
+      <div class="slds-align_absolute-center">
+        <div class="slds-size_2-of-3">
+          <lightning-card title="Gordy Coleman Memorial Stadium">
+            <img src="https://thisgreatgame.com/wp-content/uploads/2020/07/pg-aerial.jpg" class="slds-align_absolute-center">
+            <article class="slds-p-horizontal_small">Please take a trip to our newly built Gordy Coleman Memorial Stadium.
+              Located in
+              beautiful downtown Rockville, on the site of the old little league fields at Dogwood Park, at 800 Monroe St,
+              Rockville, MD 20852. Gordy Coleman Memorial Stadium was modeled to be extremely similar to the Polo Grounds,
+              the
+              old
+              Brooklyn Dodgers Stadium. However, the dimensions where changed to make it more modern. The distance from
+              the
+              foulpoles to
+              homeplate were extended by 40 feet, while the distance from homeplate to deep center is now 430 feet. These
+              dimensions are still
+              kept a little extreme both to keep that Polo Grounds feel, and to have the ability to convert the field for
+              football games.
+              Make sure you try out the delicious food in our stadium, each vendor is represented by local business. Try
+              out
+              our Meta Virtual Reality booths to see if you could get a hit off a Max Scherzer. Check out the Rockville
+              Rockets
+              hall
+              of fame, it currently only holds relics from our time in Miami, but we are sure Rockville will have its own
+              very soon. </article>
+          </lightning-card>
+        </div>
+      </div>
+    </div>
+  </template>

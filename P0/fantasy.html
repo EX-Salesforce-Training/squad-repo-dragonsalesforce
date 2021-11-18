@@ -1,0 +1,35 @@
+<template>
+    <img src="https://i.pinimg.com/originals/d2/1b/3a/d21b3ac98b7838ee230db8c0d1e31acc.png" class="rlogo">
+    <img src="https://lh3.googleusercontent.com/proxy/uIlhvTZWN8C3IuTkwAOWDXVoaVTZwcuA7XenNT0_KyHZcVzYTTqZZzEUtSPZMAA0yaFvBGnoLPTo27reKRI1TZ4" class="blogo">
+    <div class="everything">
+      <h1 class="slds-text-heading_medium slds-m-bottom_large slds-align_absolute-center">
+        The Rockville Rockets
+      </h1>
+      <div class="slds-m-top_medium slds-m-bottom_x-large slds-align_absolute-center">
+        <lightning-button-group>
+          <lightning-button label="Home" onclick={handleHomeClick}></lightning-button>
+          <lightning-button label="Tickets" onclick={handleTicketsClick}></lightning-button>
+          <lightning-button label="Stadium" onclick={handleStadiumClick}></lightning-button>
+          <lightning-button label="Stats" onclick={handleStatsClick}></lightning-button>
+          <lightning-button label="MLB News" onclick={handleNewsClick}></lightning-button>
+          <lightning-button label="Fantasy Baseball" onclick={handleFantasyClick}></lightning-button>
+        </lightning-button-group>
+      </div>
+      <div class="slds-align_absolute-center slds-m-top_large">
+        <div class="slds-size_1-of-2 slds-m-horizontal_large">
+          <lightning-card title="Support the Rockets on your fantasy teams">
+            <ul class="slds-has-block-links_space">
+              <li><a href="https://baseball.fantasysports.yahoo.com/">Yahoo Fantasy Baseball- Create and join your own
+                  fantasy baseball leagues</a>
+              </li>
+              <li><a href="https://www.cbssports.com/fantasy/baseball/">CBS
+                  Sports - Create and join your own fantasy baseball league</a></li>
+              <li><a href="https://www.draftkings.com/fantasy-baseball">DraftKings - Create and join yoiur own fantasy
+                  baseball league</a></li>
+              <li><a href="https://www.espn.com/fantasy/baseball/">ESPN - Fantasy Baseball News</a></li>
+            </ul>
+          </lightning-card>
+        </div>
+      </div>
+    </div>
+  </template>
