@@ -1,4 +1,5 @@
 import { LightningElement } from "lwc";
+//Imports all other html files so the templates can be interchanged
 import home from 'c/home.html';
 import about from 'c/aboutUs.html';
 import shop from 'c/shop.html';
@@ -7,12 +8,15 @@ import contact from 'c/contact.html';
 import searchErr from 'c/searchErr.html';
 
 export default class App extends LightningElement {
+  //when one boolean is true the rest are set to false, true boolean determines the active template
   showHome = true;
   showAbout = false;
   showShop = false;
   showResources = false;
   showContact = false;
   showSearchErr = false;
+
+  //template swap
   render(){
     if(this.showHome == true){
       return home;
@@ -34,6 +38,7 @@ export default class App extends LightningElement {
     }
   }
 
+  //menu button click triggers boolean assignment
   handleHomeClick(){
   this.showHome = true;
   this.showAbout = false;
@@ -75,6 +80,7 @@ export default class App extends LightningElement {
   this.showSearchErr = false;
   }
   handleSearchClick(){
+  //checks value of input field against available template pages
   var searchTerm = this.template.querySelector('.menuSearch').value;
   searchTerm = searchTerm.toLowerCase();
   if(searchTerm == 'home'){
