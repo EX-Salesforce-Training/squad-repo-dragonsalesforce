@@ -1,0 +1,54 @@
+
+h1 {
+    color: rgb(0, 112, 210);
+}
+p {
+    font-family: 'Salesforce Sans', Arial, sans-serif;
+    color: rgb(62, 62, 60);
+}
+
+lightning-button {
+  width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 80%;
+}
+
+
+.app {
+    /*background-color: #fafaf9;*/
+    background: url(https://i.imgur.com/vGlv9OA.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.shebng {
+  width: 85%;
+}
+
+.bannerArea {
+    /* this should be covered by the img selector, but consistancy is good. */
+    background-color: #cecece;
+}
+
+.contentArea {
+    background-color: #cecece;
+}
+
+.navArea {
+    background-color: #cecece;
+}
+.centerArea {
+    height: 100%;
+    border: 10;
+}
+
+.footerArea {
+    background-color: #cecece;
+}
