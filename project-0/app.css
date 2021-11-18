@@ -1,0 +1,78 @@
+.body{
+    background-image: url("https://i.pinimg.com/originals/cc/e9/71/cce971088b308aa20ea8368e2891f3e7.jpg")
+}
+.logo{
+    height: 150px;
+    width: 300px;
+    
+}
+
+header{
+    display:flex;
+    flex-direction: row;
+}
+button{
+    height: 4em;
+    width: 10em;
+    background-image: url("https://thumbs.dreamstime.com/b/silver-hammered-metal-background-abstract-metalic-texture-sheet-metal-surface-painted-hammer-paint-96637272.jpg");
+    color:white;
+        
+}
+.menu{
+    display:flex;
+    flex-wrap:nowrap;
+}
+.menuSearch{
+    font-size: 36px;
+    height: 1.5em;
+    width: 7em;
+}
+carousel{
+    display:flex;
+    justify-content: center;
+}
+
+.gridHeader{
+    display:flex;
+    justify-content: center;
+    font-size: 36px;
+    font-family: 'Cowboy';
+    color:white;
+}
+.gridRow{
+    display:flex;
+
+    justify-content: space-evenly;
+}
+.gridImg{
+    height: 300px;
+    width: 300px;
+}
+.aboutTitle{
+    display:flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Cowboy';
+    color: white;
+}
+.aboutTxt{
+    font-size: 22px;
+    font-family: 'Cowboy';
+    color:white;
+}
+a{
+    font-size: 22px;
+    font-family: 'Cowboy';
+}
+.searchErrMsg{
+    font-size: 30px;
+    font-family: 'Cowboy';
+    color:white;
+}
+footer{
+    display:flex;
+    
+    justify-content:center;
+    
+    background-image: url("https://thumbs.dreamstime.com/b/silver-hammered-metal-background-abstract-metalic-texture-sheet-metal-surface-painted-hammer-paint-96637272.jpg");
+}
