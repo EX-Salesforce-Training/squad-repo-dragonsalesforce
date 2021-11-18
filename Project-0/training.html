@@ -1,0 +1,85 @@
+<template>
+  <div class="menu">
+    <button class="menuButton" type="button" label="Home" onclick={handleHomeClick}>Home</button>
+    <button class="menuButton" type="button" label="Road" onclick={handleRoadClick}>Road</button>
+    <button class="menuButton" type="button" label="MTB" onclick={handleMtbClick}>MTB</button>
+    <button class="menuButton" type="button" label="Apparel" onclick={handleApparelClick}>Apparel</button>
+    <button class="menuButton" type="button" label="Training" onclick={handleTrainingClick}>Training</button>
+    <button class="menuButton" type="button" label="Clearance" onclick={handleClearanceClick}>Clearance</button>
+  </div>
+
+  <div class="slds-size_3-of-4">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+      <lightning-carousel>
+        <lightning-carousel-image
+          src="https://cdn.shopify.com/s/files/1/2484/8112/products/Back-Bike-on-top_1800x1800.jpg?v=1611220338"
+          header="MTB Hopper Area 51 2021"
+          description="This heavy duty ramp is as extreme as we offer. Ideal for higher speeds (25 - 35 kph)"
+          alternative-text="Image of very large, portable ramp" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://cdn.shopify.com/s/files/1/2484/8112/products/MTBHopper23024_1800x1800.jpg?v=1611219869"
+          header="MTB Hopper Lite Ramp" description="This ramp will help you progress and learn how to jump better!"
+          alternative-text="Image of ramp" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://cdn.shopify.com/s/files/1/2484/8112/products/1200_MTBHopper23083_1800x1800.jpg?v=1611226264"
+          header="MTB Hopper Balance Trainer"
+          description="This balance trainer will help you get better at manualling in no time!"
+          alternative-text="Image of a man using a MTB Hopper Balance to balance on the rear wheel of a bike."
+          href="javascript:void(0);">
+        </lightning-carousel-image>
+      </lightning-carousel>
+    </div>
+  </div>
+
+  <div class="slds-grid slds-grid_align-space slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Floor pumps!">
+        <lightning-button onclick={handleApparelClick} label="Training" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/472E-9067_PUMP_AIR-TOOL-HP_ION?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Specialized Air Tool HP Floor Pump</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Lights!">
+        <lightning-button onclick={handleApparelClick} label="Training" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/49119-161_LGHT_FLUX-1200-HEADLIGHT_MOUNT?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Specialized Flux 850 Headlight</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="SpeedZone">
+        <lightning-button onclick={handleClearanceClick} label="Training" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/161990?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">SpeedZone Mount Kit</p>
+      </lightning-card>
+    </div>
+  </div>
+  <br>
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Grip Tape!">
+        <lightning-button onclick={handleRoadClick} label="Training" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/25522-321_GRIP_SUPER-STICKY-KUSH-TAPE-STAR-FADE-NEON-PNK-NEON-PNK-PLUGS_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Kush Star Fade Tape</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Grips!">
+        <lightning-button onclick={handleTrainingClick} label="Training" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/25522-02_GRIP_DIAMOND-KUSH-BLK-OIL_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Supacaz Diamond Kush Grip</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Water Bottles!">
+        <lightning-button onclick={handleBmxClick} label="Training" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/44221-223_BTL_PURIST-MFLO-BTL-TIDE-TOPESTRIPE-22-OZ_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Purist MoFlo 22oz</p>
+      </lightning-card>
+    </div>
+  </div>
+
+
+</template>
