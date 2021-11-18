@@ -24,7 +24,11 @@ var leashInfo = ["Here at The Dragon Leash Corp we sell leashes of the highest c
                  "\"I err, thought 'em might break, but uh, they dont! Good stuff these Dragon Leash Corp. Leashes!\" - Hagrid, Hogwarts Game keeper", lb,
                  "\"My babies are free to fly as they want, but if they eat too many unsullied, a quick tug, and theyre right back to mummy! I dont go anywhere without Dragon Leash Corp Leashes!\" - Khaleesi, Mother of Dragons.", lb,
                  "\"Tick-Click-hissssss Clickity-tick-tick-clickity (more garbled noises)\" - The Nazgul (We're pretty sure they like em!)."];
-var runsInfo = "";
+var runsInfo = ["Dragons need exercise, and the working dragon master may not always be around to take them for a walk.",lb,
+	        "Our exclusive line of extended dragon runs, made of high tensile titanium alloys, or optional laser technology ",lb,
+	        "gives your dragon the freedom it graves, while stopping them from raiding neighboring cities, farmers fields, or school playgrounds.",lb,
+	        "Available in a variety of lengths, distances, weights, and now multiple colors, Our Dragon Runs(TM) make the perfect gift for the ",lb,
+	        "hard to please dragon master - or dragon - in your life. Call Today For ordering information!"];
 var harnessInfo = "";
 
 var contactInfo = [ "Come join us at the castle!",lb,
