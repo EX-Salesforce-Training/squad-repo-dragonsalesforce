@@ -1,0 +1,85 @@
+<template>
+  <div class="menu">
+    <button class="menuButton" type="button" label="Home" onclick={handleHomeClick}>Home</button>
+    <button class="menuButton" type="button" label="Road" onclick={handleRoadClick}>Road</button>
+    <button class="menuButton" type="button" label="MTB" onclick={handleMtbClick}>MTB</button>
+    <button class="menuButton" type="button" label="Apparel" onclick={handleApparelClick}>Apparel</button>
+    <button class="menuButton" type="button" label="Training" onclick={handleTrainingClick}>Training</button>
+    <button class="menuButton" type="button" label="Clearance" onclick={handleClearanceClick}>Clearance</button>
+  </div>
+
+  <div class="slds-size_3-of-4">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+      <lightning-carousel>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/63121-250_INLC_OUTRIDE---SL-JERSEY-SS-BLK-M_PLP-HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="Men's SL Short Sleeve Jersey - Outride Collection"
+          description="This Jersey from the Outride Collection will help you to look as good as you ride"
+          alternative-text="Image of a man in a jersey that says OUTRIDE on it." href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/64421-660_APP_RACE-SERIES-RAIN-JACKET-MEN-HYPERVIZ-M_HERO?fmt=auto"
+          header="Men's HyprViz Race - Series Rain Jacket"
+          description="This sleek rain jacket as as comfortable as it is stylish!"
+          alternative-text="Image of a bright yellow rain jacket" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/64621-560_APP_SPEED-OF-LIGHT-LIGHTWEIGHT-HOODIE-MEN-DARK-WASH-M_FRONT-3-4?fmt=auto"
+          header="Men's Lightweight Hoodie - Speed of Light Collection"
+          description="This lightweight hoodie is cool, comfortable, and clean." alternative-text="Image of a hoodie"
+          href="javascript:void(0);">
+        </lightning-carousel-image>
+      </lightning-carousel>
+    </div>
+  </div>
+
+  <div class="slds-grid slds-grid_align-space slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Gloves!">
+        <lightning-button onclick={handleApparelClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/67119-161_GLV_BG-SPORT-GEL-GLOVE-LF-RED-M_HERO?fmt=auto">
+        <p slot="footer">Specialized Men's Body Geometry Sport Gel Long Finger Gloves</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Helmets!">
+        <lightning-button onclick={handleApparelClick} label="Helmets" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/60219-022_HLMT_SW-DISSIDENT-DH-HLMT-ANGI-MIPS-CPSC-RAW-CARBON-M_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Specialized S-Works Dissident</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Clearance!">
+        <lightning-button onclick={handleClearanceClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/61021-004_SHOE_SW-7-RD-SHOE-SPEED-OF-LIGHT-LTD-44_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">S-Works 7 Road SHoes - Speed of Light Collection now 20% off!</p>
+      </lightning-card>
+    </div>
+  </div>
+  <br>
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Masks">
+        <lightning-button onclick={handleRoadClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/64821-992_APP_SPECIALIZED-FACE-MASK-S-LOGO-RED-WHT-OSFA-EA_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Specialized Face Mask</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Apparel">
+        <lightning-button onclick={handleTrainingClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/64820-220_APP_NEW-ERA-POM-BEANIE-SPECIALIZED-BLK-OSFA_HERO_FORM?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">New Era Pom Specialized Beanie</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Socks!">
+        <lightning-button onclick={handleBmxClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/64722-130_APP_MERINO-DEEP-WINTER-TALL-LOGO-SOCK-BLK-M_HERO?fmt=auto">
+        <p slot="footer">Merino Deep Winter Tall Logo Socks</p>
+      </lightning-card>
+    </div>
+  </div>
+
+
+</template>
