@@ -1,0 +1,84 @@
+<template>
+  <div class="menu">
+    <button class="menuButton" type="button" label="Home" onclick={handleHomeClick}>Home</button>
+    <button class="menuButton" type="button" label="Road" onclick={handleRoadClick}>Road</button>
+    <button class="menuButton" type="button" label="MTB" onclick={handleMtbClick}>MTB</button>
+    <button class="menuButton" type="button" label="Apparel" onclick={handleApparelClick}>Apparel</button>
+    <button class="menuButton" type="button" label="Training" onclick={handleTrainingClick}>Training</button>
+    <button class="menuButton" type="button" label="Clearance" onclick={handleClearanceClick}>Clearance</button>
+  </div>
+
+  <div class="slds-size_3-of-4">
+    <div class="slds-box slds-box_x-small slds-text-align_center slds-m-around_x-small">
+      <lightning-carousel>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/98121-01_CREO-SL-SW-CARBON-EVO-REDWD-CARB_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="2021 S-Works Turbo Creo SL EVO"
+          description="The all new S-Works Turbo Creo SL EVO is the latest and greatest in Road E-bikes!"
+          alternative-text="Image of a 2021 Specialized S-Works Turbo Creo SL EVO E-bike" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/70621-00_TARMAC-SL7-SW-FRMSET-SPEED-OF-LIGHT-REDTNT-CMLN-WHT_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="S-Works Tarmac SL7 Frameset - Speed of Light Collection"
+          description="Check out phenomenal S-Works Tarmac SL7 Frameset - Speed of Light Collection"
+          alternative-text="Image of S-Works Tarmac SL7 Frameset" href="javascript:void(0);">
+        </lightning-carousel-image>
+        <lightning-carousel-image
+          src="https://assets.specialized.com/i/specialized/91422-11_CRUX-PRO-VIVCRL-DSTLLC-CARB_FDSQ?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto"
+          header="Crux Pro" description="Check out the Specialized Crux Pro!"
+          alternative-text="Image of Crux Pro Road Bike" href="javascript:void(0);">
+        </lightning-carousel-image>
+      </lightning-carousel>
+    </div>
+  </div>
+
+  <div class="slds-grid slds-grid_align-space slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Shoes!">
+        <lightning-button onclick={handleApparelClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/61022-414_SHOE_SW-ARES-RD-SHOE-FLORED-MRN-44_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">S-Works Ares Road Shoes</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Helmets!">
+        <lightning-button onclick={handleApparelClick} label="Helmets" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/60721-172_HLMT_SW-EVADE-II-HLMT-ANGI-MIPS-CE-CMLN-BLK-M_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">S-Works Evade</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Clearance!">
+        <lightning-button onclick={handleClearanceClick} label="Clearance!" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/41118-0201_BAG_STORMPROOF-SEAT-PACK_BLK_HERO?bg=rgb(241,241,241)&w=1600&h=900&fmt=auto">
+        <p slot="footer">Stormproof Seat Pack - Small</p>
+      </lightning-card>
+    </div>
+  </div>
+  <br>
+  <div class="slds-grid slds-gutters">
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Road Bikes!">
+        <lightning-button onclick={handleRoadClick} label="Road Bikes" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/BRD-9074__Lower_2880x1620_Tarmac_Bike_1?$hybris-pdp-photo-carousel$">
+        <p slot="footer">S-Works Tarmac SL7 - Speed of Light Collection</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="Apparel!">
+        <lightning-button onclick={handleTrainingClick} label="Apparel" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/64920-000_APP_SL-AIR-JERSEY-LS-HYPERVIZ-M_HERO?fmt=auto">
+        <p slot="footer">Men's HyprViz SL Air Long Sleeve Jersey</p>
+      </lightning-card>
+    </div>
+    <div class="slds-col slds-size_1-of-3">
+      <lightning-card title="BMX">
+        <lightning-button onclick={handleBmxClick} label="Socks!" slot="actions"></lightning-button>
+        <img src="https://assets.specialized.com/i/specialized/64721-240_APP_SOFT-AIR-TALL-SOCK-SPEED-OF-LIGHT-INFRARED_HERO?fmt=auto">
+        <p slot="footer">Specialized P.3 Dirt Jumper</p>
+      </lightning-card>
+    </div>
+  </div>
+
+
+</template>
