@@ -1,0 +1,54 @@
+public class IntroToApex {
+
+    public void AddAccounts(){
+    	Account newAccount;
+   		List<Account> newAccountList = new List<Account>();
+        for(integer i = 1; i < 152; i++){
+ 			newAccount = new Account();        	
+        	newAccount.Name = 'New Account #' + i;
+           
+            newAccountList.add(newAccount);
+        	}
+		insert newAccountList;
+    }
+	
+    public void DeleteAccounts(){
+        for(List<Account> AccountList : [SELECT Name FROM Account WHERE Name Like 'New Account #%'])
+        {
+            database.delete(AccountList);
+        }
+    }
+    public void CompleteRecords(){  
+		List<Contact> ContactList = new List<Contact>();
+    	for(Contact contactCheck : [SELECT email, phone FROM Contact where email = null OR phone = null]){
+            if(contactCheck.email == null){
+                contactCheck.email = 'fake@fake.fake';
+            }
+            if(contactCheck.phone == null){
+                contactCheck.phone = '(111)111-1111';
+            }
+            ContactList.add(contactCheck);
+            
+        }
+    	update ContactList;
+    }
+    public void IntoTheBobVerse(){
+        Contact Bob;
+        List<Contact> listOfBobs = new List<Contact>();
+        for(integer i = 0; i < 200; i++){
+            Bob = new Contact();
+            Bob.FirstName = 'Bob';
+            Bob.LastName = 'Last Name ' + i;
+            listOfBobs.add(Bob);
+        }
+        
+        for(Contact existingContacts:[SELECT firstname FROM Contact]){
+            existingContacts.firstname = 'Bob';
+            listOfBobs.add(existingContacts);
+        }
+        
+        upsert listofBobs;
+    }
+    
+
+}
