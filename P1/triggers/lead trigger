@@ -1,0 +1,29 @@
+trigger LeadTrigger on Lead (before insert, before update, before delete, after insert, after update, after delete, after undelete) {
+Switch on Trigger.OperationType {
+        when BEFORE_INSERT {
+           //TriggerHelper.testLogicless(trigger.new);     //simple trigger I used for testing purposes
+        } 
+        when BEFORE_UPDATE {
+            
+        }
+        when BEFORE_DELETE {   //Create trigger to prevent deletion on all non closed- non converted lead statuses
+           TriggerHelper.preventLeadDelete(trigger.old);
+            
+        }
+        when AFTER_INSERT {
+            
+        }
+        when AFTER_UPDATE {
+            
+        }
+        when AFTER_DELETE {
+            
+        }
+        when AFTER_UNDELETE {
+            
+        } when else {
+            
+        }
+        
+    }
+}
