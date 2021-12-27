@@ -1,0 +1,84 @@
+<template>
+    
+    <lightning-combobox                                                         
+            name="progress"
+            label="Interact with the Rockville Rockets"
+            value={value}
+            placeholder="Select Action"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+    </br>
+    <template if:true={cCase}>
+        <h1 style="text-align:center">Submit a Case</h1>
+    </br>
+        <lightning-card>
+            <lightning-record-form object-api-name={objectApiName} fields={fields} onsuccess={handleSuccess} columns="2"></lightning-record-form>
+        </lightning-card>
+    </template>
+    <template if:true={cOpp}>
+        <h1 style="text-align:center">Submit an Opportunity</h1>
+    </br>
+        <lightning-card>
+            <lightning-record-form object-api-name={objectApiName2} fields={fields2} onsuccess={handleSuccess2} ></lightning-record-form>
+        </lightning-card>
+    </template>
+    <template if:true={cLead}>
+        <h1 style="text-align:center">Submit a Lead</h1>
+    </br>
+        <lightning-card>
+            <lightning-record-form
+                object-api-name={objectApiName5}
+                fields={fields3}
+                onsuccess={handleSuccess}
+                columns="2">
+            </lightning-record-form>
+        </lightning-card>
+    </template>
+    <template if:true={lCase}>
+        <template for:each={casetest.data} for:item="cs">
+        <div key={key}>
+            <h1 style="text-align:center">View Your Case</h1>
+        </br>
+        <lightning-card>
+        <lightning-record-view-form record-id={cs.Id} object-api-name={objectApiName3}>
+            <lightning-output-field field-name={subject}></lightning-output-field>
+            <lightning-output-field field-name={description}></lightning-output-field>
+            <lightning-output-field field-name={status}></lightning-output-field>
+            <lightning-output-field field-name={date}></lightning-output-field>
+        </lightning-record-view-form>
+        </lightning-card>
+        </div>
+        </template>
+    </template>
+    <template if:true={lOpp}>
+        <template for:each={opptest.data} for:item="ops">
+        <div key={key}>
+            <h1 style="text-align:center">View Your Opportunity</h1>
+        </br>
+        <lightning-card>
+        <lightning-record-view-form record-id={ops.Id} object-api-name={objectApiName4}>
+            <lightning-output-field field-name={oppName}></lightning-output-field>
+            <lightning-output-field field-name={oppDesc}></lightning-output-field>
+            <lightning-output-field field-name={oppStage}></lightning-output-field>
+            <lightning-output-field field-name={oppClose}></lightning-output-field>
+            <lightning-output-field field-name={oppAmount}></lightning-output-field>
+            
+        </lightning-record-view-form>
+    </lightning-card>
+    </div>
+    </template>
+    </template>    
+    <template if:true={lLead}>
+        <lightning-card>
+            <h1 style="text-align:center">View Your Lead</h1>
+        </br>
+            <lightning-record-view-form record-id={leadId} object-api-name={objectApiName5}>
+                <lightning-output-field field-name={leadFirst}></lightning-output-field>
+                <lightning-output-field field-name={leadLast}></lightning-output-field>
+                <lightning-output-field field-name={leadCompany}></lightning-output-field>
+                <lightning-output-field field-name={leadIndustry}></lightning-output-field>
+                <lightning-output-field field-name={leadStatus}></lightning-output-field>
+            </lightning-record-view-form>
+        </lightning-card>
+    </template>
+</template>
