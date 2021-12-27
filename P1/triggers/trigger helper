@@ -1,0 +1,50 @@
+public class TriggerHelper {
+	public static void testLogicless(List<Lead> test){       //simple trigger used for testing purposes
+           for(Lead l: test){
+               if(l.FirstName=='test'){
+                   l.addError('Test Error Worked!');
+    }
+}
+    }
+    public static void preventLeadDelete(List<Lead> noDel){              //prevention of deleting Leads that shouldnt be deleted
+        for(Lead dl: noDel){     
+                if(dl.status != 'Closed - Not Converted'){
+                    dl.addError('You can only delete leads that are "Closed - Not Converted"');
+                }
+            }
+    }
+    public static void preventOppDelete(List<Opportunity> noDelOpp){            //prevention of deleting Opportunities that shouldnt be deleted
+        for(Opportunity o2: noDelOpp){
+                if(o2.StageName != 'Closed Lost'){
+                    o2.addError('You can only delete opportunities that are not "Closed Lost"');
+                }
+            }
+    }
+    public static void createTaskOpp(List<Opportunity> taskOpp){                  //create a task if an opportunity does not have an amount
+          List<Task> taskList = new List<Task>();
+            for(Opportunity o: taskOpp){
+                if(o.Amount == null){
+                	Task reminder = new task();
+                	reminder.OwnerId = o.Ownerid;
+                	reminder.subject = 'A new opportunity was created without an amount field';
+                	reminder.Description = 'Please get in touch with the Contact, and specify the contract amount, and any other empty fields that you can fill in. Thanks!';
+                	reminder.Status = 'Not Started';
+                	reminder.WhatId = o.Id;
+               	 	reminder.Priority = 'Normal';
+                    tasklist.add(reminder);
+                }
+            }
+            if(taskList.size()>0){
+                insert taskList;
+            }
+    }
+    public static void createNick(list<User> nick){                                  //update a nickname to something nicer to look at
+        list<User> UserList = [SELECT Id,Name,CommunityNickname FROM User Where Id In :nick];
+            for(User u:UserList){
+                u.CommunityNickname=u.name;
+            }
+            if(UserList.size()>0){
+                update UserList;
+            }
+    }
+}
