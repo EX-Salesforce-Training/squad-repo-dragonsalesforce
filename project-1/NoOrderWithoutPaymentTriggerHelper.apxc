@@ -1,0 +1,18 @@
+public class NoOrderWithoutPaymentTriggerHelper {
+    public static void paymentInfoGood(List<Customer_Order__c> ords){
+        List<Customer__c> custs = [
+          	SELECT Name, Card_Number__c, CCV__c, Expiration_Month__c, Expiration_Year__c
+          	FROM Customer__c
+        ];
+   
+        for(Customer_Order__c cOC : ords){
+            for(Customer__c cC : custs){
+                if(cC.Id == cOC.Order_Customer__c){
+                    if(cC.Card_Number__c == NULL || cC.CCV__c == NULL || cc.Expiration_Month__c == NULL || cC.Expiration_Year__c == NULL){
+                        cOC.addError('Customer ' + cC.Name + ' may have incomplete payment information');
+                    }
+                }
+          	}
+        }
+	}
+}
