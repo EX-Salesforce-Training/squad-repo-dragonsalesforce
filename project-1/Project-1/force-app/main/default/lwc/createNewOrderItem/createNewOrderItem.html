@@ -1,0 +1,41 @@
+<template>
+  <lightning-card>
+    <p class="title">Add An Item</p>
+        <lightning-record-edit-form
+            class="form"
+            object-api-name="Order_Item__c"
+            onsuccess={handleSuccess}
+        >
+            <div class="slds-m-around_medium">
+                <div class="row">
+                    <lightning-input-field
+                        field-name="Part_of_Order__c"
+                    ></lightning-input-field>
+                    <lightning-input-field
+                    field-name="Made_By__c"
+                    onchange={handleChange}
+                    ></lightning-input-field>
+                
+                    <lightning-input-field
+                        field-name="Ordered_Item__c"
+                        onchange={handleChange}
+                    ></lightning-input-field>
+                    <lightning-input-field
+                        field-name="Quantity__c"
+                    ></lightning-input-field>
+                </div>
+                <lightning-input-field
+                        field-name="Item_Details__c"
+                    ></lightning-input-field>
+                <div class="slds-m-top_medium">
+                    <lightning-button
+                        variant="brand"
+                        type="submit"
+                        name="save"
+                        label="Add Item To Order"
+                    ></lightning-button>
+                </div>
+            </div>
+        </lightning-record-edit-form>  
+  </lightning-card>  
+</template>

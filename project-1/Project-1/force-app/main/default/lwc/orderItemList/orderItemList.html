@@ -1,0 +1,13 @@
+<template>
+    <lightning-card>
+        <p class="title">Items Purchased</p>
+        <template if:true={orderItems.data}>
+            <lightning-datatable
+                key-field="Id"
+                data={orderItems.data}
+                columns={columns}
+            >
+            </lightning-datatable>
+            </template>
+    </lightning-card>
+</template>

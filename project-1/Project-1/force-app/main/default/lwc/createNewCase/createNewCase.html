@@ -1,0 +1,39 @@
+<template>
+    <lightning-card>
+        <p class="title">Have a Problem? Let us Help.</p>
+        <lightning-record-edit-form
+            class="form"
+            object-api-name="Case"
+            onsuccess={handleSuccess}
+        >
+            <div class="slds-m-around_medium">
+                <div class="row">
+                    <lightning-input-field
+                        field-name="ContactId"
+                    ></lightning-input-field>
+                    <lightning-input-field
+                    label=""
+                    field-name="Reason"
+                    onchange={handleChange}
+                    ></lightning-input-field>
+                </div>
+                <lightning-input-field
+                    label=""
+                    field-name="Subject"
+                    onchange={handleChange}
+                ></lightning-input-field>
+                <lightning-input-field
+                    field-name="Description"
+                ></lightning-input-field>
+                <div class="slds-m-top_medium">
+                    <lightning-button
+                        variant="brand"
+                        type="submit"
+                        name="save"
+                        label="Create Case"
+                    ></lightning-button>
+                </div>
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

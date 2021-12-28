@@ -1,0 +1,23 @@
+.selector{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    color: rgb(8, 107, 38);
+    font-weight:bolder;
+    font-size: 20px;
+}
+.title{
+    color:rgb(37, 116, 169);
+    font-weight: bolder;
+    font-size: 22px;
+}
+.details{
+    display:flex;
+    flex-direction: column;
+
+}
+.Contact{
+    color:rgb(37, 116, 169);
+    font-weight: bold;
+    font-size: 17px;
+}

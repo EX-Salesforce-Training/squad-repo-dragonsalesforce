@@ -1,0 +1,14 @@
+.title{
+    font-size:18px;
+    font-weight:bold;
+    padding-left: 15px;
+    color:rgb(37, 116, 169);
+}
+.row{
+    display:flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}

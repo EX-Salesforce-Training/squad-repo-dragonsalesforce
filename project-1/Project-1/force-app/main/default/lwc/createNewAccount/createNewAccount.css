@@ -1,0 +1,10 @@
+.LdsCreateRecord{
+    background-color: white;
+    color:rgb(16, 72, 194);
+    
+   
+}
+.row{
+    display:flex;
+    flex-direction:row;    
+}

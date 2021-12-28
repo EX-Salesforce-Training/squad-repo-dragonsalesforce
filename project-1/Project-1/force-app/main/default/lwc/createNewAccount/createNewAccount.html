@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="LdsCreateRecord" icon-name="standard:record">
+       <div class="slds-m-around_medium">
+          <div class='row'> 
+           <lightning-input placeholder="Name" onchange={handleNameChange} class="slds-m-bottom_x-small"></lightning-input>
+           <lightning-input placeholder="Email" onchange={handleEmailChange} class="slds-m-bottom_x-small"></lightning-input>
+           
+          </div>
+          <lightning-button label="Create Account" variant="brand" onclick={createAccount}></lightning-button>
+        </div>
+    </lightning-card>
+</template> 

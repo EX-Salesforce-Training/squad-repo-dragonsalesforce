@@ -1,0 +1,36 @@
+<template>
+    <lightning-card> 
+    <div class='selector'>
+        <div class='details'>
+            <p class="title">Select A Product To View</p>
+    <lightning-card class = "ProductSelection">
+        <lightning-combobox
+            name="Product Type"
+            value={value}
+            placeholder="Select Product"
+            options={productOptions}
+            onchange={handleProductChange}
+            title={price}
+        >
+        </lightning-combobox>
+        
+    </lightning-card>
+    <lightning-card class="Contact">
+        <p>All prices are subject to change based on complexity and cost of materials</p>
+        <br>
+        <p>For more information, reach out to us at:</p>
+        <p>Phone #: 605-475-6964</p>
+        <p>e-Mail: forgemaster@sdfironworks.com</p>
+        <p>Or submit a case ticket.</p>
+    </lightning-card>
+    </div>
+    
+    <lightning-card label={title} class = "ProductDetails">
+        
+        <img src={url} height='300' width='300'></img>
+
+    </lightning-card>
+    </div>
+</lightning-card>
+    
+</template>
