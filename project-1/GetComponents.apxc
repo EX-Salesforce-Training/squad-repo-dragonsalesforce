@@ -1,0 +1,33 @@
+public with sharing class GetComponents {
+	@AuraEnabled(cacheable = true)
+    public static List<Product__c> getProduct(){
+        return[
+            SELECT Name, Product_Price__c, Image_URL__c 
+            FROM Product__c
+        ];
+    }
+	@AuraEnabled(cacheable = true)
+    public static List<Customer_Order__c> getOrder(){
+        return[
+            SELECT Name, Order_Date__c, Items_Ordered__c, Total__c, Order_Completion_Status__c
+            FROM Customer_Order__c
+            WITH SECURITY_ENFORCED
+        ];
+    }
+    @AuraEnabled(cacheable = true)
+    public static List<Customer__c> getCust(){
+        return[
+            SELECT First_Name__c, Last_Name__c, Name
+            FROM Customer__c
+            WITH SECURITY_ENFORCED
+        ];
+    }
+     @AuraEnabled(cacheable = true)
+    public static List<Order_Item__c> getOrderItem(){
+        return[
+            SELECT Name, Made_By__c, Part_of_Order__c, Ordered_Item__c, Item_Price__c, Quantity__c, Subtotal__c, Completed__c
+            FROM Order_Item__c
+            WITH SECURITY_ENFORCED
+        ];
+    }
+}
