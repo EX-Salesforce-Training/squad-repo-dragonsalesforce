@@ -1,0 +1,66 @@
+public class DeleteCustomerTriggerHelper{
+    public static void verifyOrdersComplete(List<Customer__C> cust){
+        //Select all customer orders into the allOrds List
+        List<Customer_Order__c> allOrds= [
+        	SELECT Order_Customer__c, Order_Completion_Status__c
+        	FROM Customer_Order__c
+            
+        	];
+        
+        List<Customer_Order__c> markOrds = new List<Customer_Order__c>();
+        
+        //Nested for() loops iterate through cust list and allOrds list and 
+        //add the Customer Orders that were ordered by customers in the
+        //cust list to the markOrds list.
+        //I.e, adds relevant orders to the markOrds list
+        for(Customer_Order__c cOC : allOrds){
+            for(Customer__c cC : cust){
+                
+                if(cC.Id == cOC.Order_Customer__c){
+                    markOrds.add(cOC);
+                }
+            }    
+        }
+        
+        //New list custErr stores customers that should not be deleted, customers with incomplete orders
+       
+        List<Customer__c> custErr = new List<Customer__c>();
+        
+        //Nested for() loop compares Customer ID (Customer__c.Name) with the Customer_Order's Order_Customer and
+        //checks for incomplete orders. Customers with no incomplete orders can be deleted,
+        //customers with incomplete orders can not.
+        //If no matching order is found, customer is approved for deletion
+        for(Customer__c cC : cust){
+            boolean hasIncompleteOrders = false;
+            for(Customer_Order__c cOC : markOrds){
+                
+                if(cC.Id == cOC.Order_Customer__c){
+                    if(cOC.Order_Completion_Status__c == 'Pending' || cOC.Order_Completion_Status__c == 'In Progress'){
+                        hasIncompleteOrders = true;
+                    }
+                    
+                }
+            }
+            if(hasIncompleteOrders == true){
+                custErr.add(cC);
+            }
+           
+          
+        }       
+        
+        
+        if(custErr.isEmpty() == false){
+        	String errConcat = 'The following Customers may have incomplete orders: ';
+        	for(Customer__c cC : custErr){
+           		errConcat = errConcat + ' ... ';
+            	errConcat = errConcat + cC.Name;
+                
+        	}
+			errConcat = errConcat + '.';
+            custErr[0].addError(errConcat);
+            
+        }
+        
+    }
+
+}
