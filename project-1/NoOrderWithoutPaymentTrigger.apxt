@@ -1,0 +1,4 @@
+trigger NoOrderWithoutPaymentTrigger on Customer_Order__c (before insert) {
+	
+    NoOrderWithoutPaymentTriggerHelper.paymentInfoGood(trigger.new);
+}
