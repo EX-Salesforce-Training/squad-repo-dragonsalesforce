@@ -1,0 +1,4 @@
+trigger DeleteCustomerTrigger on Customer__c (before delete) {
+    
+    DeleteCustomerTriggerHelper.verifyOrdersComplete(trigger.old);
+}
